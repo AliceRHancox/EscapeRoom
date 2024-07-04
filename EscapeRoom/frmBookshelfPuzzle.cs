@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EscapeRoom
 {
-    public partial class frmWest : Form
+    public partial class frmBookshelfPuzzle : Form
     {
-        public frmWest()
+        public frmBookshelfPuzzle()
         {
             InitializeComponent();
-        }
-
-        private void picPainting_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -67,6 +67,7 @@
             picBookShelf.Size = new Size(580, 250);
             picBookShelf.TabIndex = 3;
             picBookShelf.TabStop = false;
+            picBookShelf.Click += picBookShelf_Click;
             // 
             // FrmSouth
             // 

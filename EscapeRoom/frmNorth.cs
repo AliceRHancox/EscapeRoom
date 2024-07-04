@@ -19,7 +19,12 @@ namespace EscapeRoom
 
         private void frmNorth_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void picDoor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

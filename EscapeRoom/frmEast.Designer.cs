@@ -66,6 +66,7 @@
             picWindow.Size = new Size(450, 230);
             picWindow.TabIndex = 3;
             picWindow.TabStop = false;
+            picWindow.Click += picWindow_Click;
             // 
             // frmEast
             // 

@@ -61,11 +61,12 @@
             // picPainting
             // 
             picPainting.Image = Properties.Resources.Painting_layout_1;
-            picPainting.Location = new Point(337, 42);
+            picPainting.Location = new Point(335, 59);
             picPainting.Name = "picPainting";
             picPainting.Size = new Size(200, 170);
             picPainting.TabIndex = 3;
             picPainting.TabStop = false;
+            picPainting.Click += picPainting_Click;
             // 
             // frmWest
             // 

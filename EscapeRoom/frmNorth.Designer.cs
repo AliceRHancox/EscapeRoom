@@ -76,6 +76,7 @@
             picDoor.Size = new Size(190, 300);
             picDoor.TabIndex = 5;
             picDoor.TabStop = false;
+            picDoor.Click += picDoor_Click;
             // 
             // frmNorth
             // 

@@ -16,5 +16,10 @@ namespace EscapeRoom
         {
             InitializeComponent();
         }
+
+        private void picWindow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
