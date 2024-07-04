@@ -31,6 +31,7 @@
             btnEast = new Button();
             btnWest = new Button();
             picBookShelf = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)picBookShelf).BeginInit();
             SuspendLayout();
             // 
@@ -67,6 +68,15 @@
             picBookShelf.TabIndex = 3;
             picBookShelf.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Location = new Point(315, 116);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // FrmSouth
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -74,6 +84,7 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
+            Controls.Add(button1);
             Controls.Add(picBookShelf);
             Controls.Add(btnWest);
             Controls.Add(btnEast);
@@ -89,5 +100,6 @@
         private Button btnEast;
         private Button btnWest;
         private PictureBox picBookShelf;
+        private Button button1;
     }
 }
