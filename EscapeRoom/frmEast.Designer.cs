@@ -30,8 +30,8 @@
         {
             btnNorth = new Button();
             btnSouth = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            picWindow = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picWindow).BeginInit();
             SuspendLayout();
             // 
             // btnNorth
@@ -58,13 +58,14 @@
             btnSouth.Text = "South";
             btnSouth.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // picWindow
             // 
-            pictureBox1.Location = new Point(226, 142);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(0, 0);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            picWindow.Image = Properties.Resources.Window_Layout_1;
+            picWindow.Location = new Point(213, 142);
+            picWindow.Name = "picWindow";
+            picWindow.Size = new Size(450, 230);
+            picWindow.TabIndex = 3;
+            picWindow.TabStop = false;
             // 
             // frmEast
             // 
@@ -73,13 +74,13 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
-            Controls.Add(pictureBox1);
+            Controls.Add(picWindow);
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
             DoubleBuffered = true;
             Name = "frmEast";
             Text = "frmEast";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picWindow).EndInit();
             ResumeLayout(false);
         }
 
@@ -87,6 +88,6 @@
 
         private Button btnNorth;
         private Button btnSouth;
-        private PictureBox pictureBox1;
+        private PictureBox picWindow;
     }
 }

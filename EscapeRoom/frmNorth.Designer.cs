@@ -31,7 +31,9 @@
             btnWest = new Button();
             btnEast = new Button();
             pictureBox1 = new PictureBox();
+            picDoor = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picDoor).BeginInit();
             SuspendLayout();
             // 
             // btnWest
@@ -66,6 +68,15 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
+            // picDoor
+            // 
+            picDoor.Image = Properties.Resources.DoorLayout_1;
+            picDoor.Location = new Point(347, 148);
+            picDoor.Name = "picDoor";
+            picDoor.Size = new Size(190, 300);
+            picDoor.TabIndex = 5;
+            picDoor.TabStop = false;
+            // 
             // frmNorth
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -74,6 +85,7 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
+            Controls.Add(picDoor);
             Controls.Add(pictureBox1);
             Controls.Add(btnEast);
             Controls.Add(btnWest);
@@ -83,6 +95,7 @@
             Text = "frmNorth";
             Load += frmNorth_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picDoor).EndInit();
             ResumeLayout(false);
         }
 
@@ -91,5 +104,6 @@
         private Button btnWest;
         private Button btnEast;
         private PictureBox pictureBox1;
+        private PictureBox picDoor;
     }
 }

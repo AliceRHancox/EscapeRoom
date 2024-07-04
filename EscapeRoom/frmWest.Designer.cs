@@ -30,8 +30,8 @@
         {
             btnNorth = new Button();
             btnSouth = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            picPainting = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picPainting).BeginInit();
             SuspendLayout();
             // 
             // btnNorth
@@ -58,13 +58,14 @@
             btnSouth.Text = "South";
             btnSouth.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // picPainting
             // 
-            pictureBox1.Location = new Point(337, 43);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 170);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            picPainting.Image = Properties.Resources.Painting_layout_1;
+            picPainting.Location = new Point(337, 42);
+            picPainting.Name = "picPainting";
+            picPainting.Size = new Size(200, 170);
+            picPainting.TabIndex = 3;
+            picPainting.TabStop = false;
             // 
             // frmWest
             // 
@@ -73,13 +74,13 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
-            Controls.Add(pictureBox1);
+            Controls.Add(picPainting);
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
             DoubleBuffered = true;
             Name = "frmWest";
             Text = "frmWest";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picPainting).EndInit();
             ResumeLayout(false);
         }
 
@@ -87,6 +88,6 @@
 
         private Button btnNorth;
         private Button btnSouth;
-        private PictureBox pictureBox1;
+        private PictureBox picPainting;
     }
 }

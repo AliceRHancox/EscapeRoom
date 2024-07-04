@@ -31,8 +31,6 @@
             btnEast = new Button();
             btnWest = new Button();
             picBookShelf = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)picBookShelf).BeginInit();
             SuspendLayout();
             // 
@@ -41,10 +39,9 @@
             btnEast.BackColor = Color.Transparent;
             btnEast.FlatStyle = FlatStyle.Popup;
             btnEast.ForeColor = Color.White;
-            btnEast.Location = new Point(28, 1024);
-            btnEast.Margin = new Padding(6);
+            btnEast.Location = new Point(15, 480);
             btnEast.Name = "btnEast";
-            btnEast.Size = new Size(156, 70);
+            btnEast.Size = new Size(84, 33);
             btnEast.TabIndex = 1;
             btnEast.Text = "East";
             btnEast.UseVisualStyleBackColor = false;
@@ -54,10 +51,9 @@
             btnWest.BackColor = Color.Transparent;
             btnWest.FlatStyle = FlatStyle.Popup;
             btnWest.ForeColor = Color.White;
-            btnWest.Location = new Point(1467, 1024);
-            btnWest.Margin = new Padding(6);
+            btnWest.Location = new Point(790, 480);
             btnWest.Name = "btnWest";
-            btnWest.Size = new Size(156, 70);
+            btnWest.Size = new Size(84, 33);
             btnWest.TabIndex = 2;
             btnWest.Text = "West";
             btnWest.UseVisualStyleBackColor = false;
@@ -65,46 +61,24 @@
             // picBookShelf
             // 
             picBookShelf.BackColor = Color.Transparent;
-            picBookShelf.Location = new Point(280, 407);
-            picBookShelf.Margin = new Padding(6);
+            picBookShelf.Image = Properties.Resources.Bookshelf_layout_1;
+            picBookShelf.Location = new Point(152, 197);
             picBookShelf.Name = "picBookShelf";
-            picBookShelf.Size = new Size(1077, 533);
+            picBookShelf.Size = new Size(580, 250);
             picBookShelf.TabIndex = 3;
             picBookShelf.TabStop = false;
             // 
-            // button1
-            // 
-            button1.Location = new Point(585, 247);
-            button1.Margin = new Padding(6);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 49);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(1129, 174);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 46);
-            button2.TabIndex = 5;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // FrmSouth
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1642, 1090);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(884, 511);
             Controls.Add(picBookShelf);
             Controls.Add(btnWest);
             Controls.Add(btnEast);
             DoubleBuffered = true;
-            Margin = new Padding(6);
             Name = "FrmSouth";
             Text = "FrmSouth";
             ((System.ComponentModel.ISupportInitialize)picBookShelf).EndInit();
@@ -116,7 +90,5 @@
         private Button btnEast;
         private Button btnWest;
         private PictureBox picBookShelf;
-        private Button button1;
-        private Button button2;
     }
 }

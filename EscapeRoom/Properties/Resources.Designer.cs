@@ -63,9 +63,49 @@ namespace EscapeRoom.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bookshelf_layout_1 {
+            get {
+                object obj = ResourceManager.GetObject("Bookshelf layout 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DoorLayout_1 {
+            get {
+                object obj = ResourceManager.GetObject("DoorLayout 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Painting_layout_1 {
+            get {
+                object obj = ResourceManager.GetObject("Painting layout 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RoomLayout1 {
             get {
                 object obj = ResourceManager.GetObject("RoomLayout1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Window_Layout_1 {
+            get {
+                object obj = ResourceManager.GetObject("Window Layout 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
