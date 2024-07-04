@@ -42,7 +42,7 @@
             btnEast.FlatStyle = FlatStyle.Popup;
             btnEast.ForeColor = Color.White;
             btnEast.Location = new Point(28, 1024);
-            btnEast.Margin = new Padding(6, 6, 6, 6);
+            btnEast.Margin = new Padding(6);
             btnEast.Name = "btnEast";
             btnEast.Size = new Size(156, 70);
             btnEast.TabIndex = 1;
@@ -55,7 +55,7 @@
             btnWest.FlatStyle = FlatStyle.Popup;
             btnWest.ForeColor = Color.White;
             btnWest.Location = new Point(1467, 1024);
-            btnWest.Margin = new Padding(6, 6, 6, 6);
+            btnWest.Margin = new Padding(6);
             btnWest.Name = "btnWest";
             btnWest.Size = new Size(156, 70);
             btnWest.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             picBookShelf.BackColor = Color.Transparent;
             picBookShelf.Location = new Point(280, 407);
-            picBookShelf.Margin = new Padding(6, 6, 6, 6);
+            picBookShelf.Margin = new Padding(6);
             picBookShelf.Name = "picBookShelf";
             picBookShelf.Size = new Size(1077, 533);
             picBookShelf.TabIndex = 3;
@@ -75,7 +75,7 @@
             // button1
             // 
             button1.Location = new Point(585, 247);
-            button1.Margin = new Padding(6, 6, 6, 6);
+            button1.Margin = new Padding(6);
             button1.Name = "button1";
             button1.Size = new Size(139, 49);
             button1.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(954, 349);
+            button2.Location = new Point(1129, 174);
             button2.Name = "button2";
             button2.Size = new Size(150, 46);
             button2.TabIndex = 5;
@@ -104,7 +104,7 @@
             Controls.Add(btnWest);
             Controls.Add(btnEast);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "FrmSouth";
             Text = "FrmSouth";
             ((System.ComponentModel.ISupportInitialize)picBookShelf).EndInit();
