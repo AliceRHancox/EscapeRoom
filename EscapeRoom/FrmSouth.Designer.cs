@@ -1,6 +1,6 @@
 ﻿namespace EscapeRoom
 {
-    partial class FrmSouth
+    partial class frmSouth
     {
         /// <summary>
         /// Required designer variable.
@@ -45,6 +45,7 @@
             btnEast.TabIndex = 1;
             btnEast.Text = "East";
             btnEast.UseVisualStyleBackColor = false;
+            btnEast.Click += btnEast_Click;
             // 
             // btnWest
             // 
@@ -57,6 +58,7 @@
             btnWest.TabIndex = 2;
             btnWest.Text = "West";
             btnWest.UseVisualStyleBackColor = false;
+            btnWest.Click += btnWest_Click;
             // 
             // picBookShelf
             // 
@@ -69,7 +71,7 @@
             picBookShelf.TabStop = false;
             picBookShelf.Click += picBookShelf_Click;
             // 
-            // FrmSouth
+            // frmSouth
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -80,7 +82,7 @@
             Controls.Add(btnWest);
             Controls.Add(btnEast);
             DoubleBuffered = true;
-            Name = "FrmSouth";
+            Name = "frmSouth";
             Text = "FrmSouth";
             ((System.ComponentModel.ISupportInitialize)picBookShelf).EndInit();
             ResumeLayout(false);

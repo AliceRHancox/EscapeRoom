@@ -45,6 +45,7 @@
             btnNorth.TabIndex = 1;
             btnNorth.Text = "North";
             btnNorth.UseVisualStyleBackColor = false;
+            btnNorth.Click += btnNorth_Click;
             // 
             // btnSouth
             // 
@@ -57,6 +58,7 @@
             btnSouth.TabIndex = 2;
             btnSouth.Text = "South";
             btnSouth.UseVisualStyleBackColor = false;
+            btnSouth.Click += btnSouth_Click;
             // 
             // picWindow
             // 

@@ -47,6 +47,7 @@
             btnWest.TabIndex = 0;
             btnWest.Text = "West";
             btnWest.UseVisualStyleBackColor = false;
+            btnWest.Click += btnWest_Click;
             // 
             // btnEast
             // 
@@ -59,6 +60,7 @@
             btnEast.TabIndex = 1;
             btnEast.Text = "East";
             btnEast.UseVisualStyleBackColor = false;
+            btnEast.Click += btnEast_Click;
             // 
             // pictureBox1
             // 

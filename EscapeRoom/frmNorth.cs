@@ -26,5 +26,19 @@ namespace EscapeRoom
         {
 
         }
+
+        private void btnEast_Click(object sender, EventArgs e)
+        {
+            frmEast frmEast = new frmEast();
+            frmEast.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnWest_Click(object sender, EventArgs e)
+        {
+            frmWest frmWest = new frmWest();
+            frmWest.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }
