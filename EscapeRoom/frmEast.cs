@@ -19,7 +19,9 @@ namespace EscapeRoom
 
         private void picWindow_Click(object sender, EventArgs e)
         {
-
+            frmWindowPuzzle frmWindowPuzzle = new frmWindowPuzzle();
+            frmWindowPuzzle.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
         }
 
         private void btnNorth_Click(object sender, EventArgs e)

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EscapeRoom
 {
-    public partial class WindowPuzzle : Form
+    public partial class frmWindowPuzzle : Form
     {
-        public WindowPuzzle()
+        public frmWindowPuzzle()
         {
             InitializeComponent();
         }

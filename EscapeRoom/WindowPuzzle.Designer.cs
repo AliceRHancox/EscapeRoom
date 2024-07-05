@@ -1,6 +1,6 @@
 ﻿namespace EscapeRoom
 {
-    partial class WindowPuzzle
+    partial class frmWindowPuzzle
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             SuspendLayout();
             // 
-            // WindowPuzzle
+            // frmWindowPuzzle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -38,7 +38,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
             DoubleBuffered = true;
-            Name = "WindowPuzzle";
+            Name = "frmWindowPuzzle";
             Text = "WindowPuzzle";
             ResumeLayout(false);
         }
