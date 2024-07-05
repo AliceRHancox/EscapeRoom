@@ -28,7 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnBack = new Button();
             SuspendLayout();
+            // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.Black;
+            btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(797, 457);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 1;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // PaintingPuzzle
             // 
@@ -36,11 +49,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(884, 511);
+            Controls.Add(btnBack);
             Name = "PaintingPuzzle";
             Text = "PaintingPuzzle";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnBack;
     }
 }

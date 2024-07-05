@@ -28,7 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnBack = new Button();
             SuspendLayout();
+            // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.Black;
+            btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(797, 465);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 1;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // frmWindowPuzzle
             // 
@@ -37,6 +50,7 @@
             BackgroundImage = Properties.Resources.CloseUpWindow;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
+            Controls.Add(btnBack);
             DoubleBuffered = true;
             Name = "frmWindowPuzzle";
             Text = "WindowPuzzle";
@@ -44,5 +58,7 @@
         }
 
         #endregion
+
+        private Button btnBack;
     }
 }
