@@ -82,6 +82,7 @@
             Controls.Add(btnNorth);
             DoubleBuffered = true;
             Name = "frmWest";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmWest";
             ((System.ComponentModel.ISupportInitialize)picPainting).EndInit();
             ResumeLayout(false);

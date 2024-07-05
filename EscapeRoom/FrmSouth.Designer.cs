@@ -83,6 +83,7 @@
             Controls.Add(btnEast);
             DoubleBuffered = true;
             Name = "frmSouth";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmSouth";
             ((System.ComponentModel.ISupportInitialize)picBookShelf).EndInit();
             ResumeLayout(false);

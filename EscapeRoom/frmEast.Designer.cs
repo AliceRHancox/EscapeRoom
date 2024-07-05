@@ -82,6 +82,7 @@
             Controls.Add(btnNorth);
             DoubleBuffered = true;
             Name = "frmEast";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmEast";
             ((System.ComponentModel.ISupportInitialize)picWindow).EndInit();
             ResumeLayout(false);
