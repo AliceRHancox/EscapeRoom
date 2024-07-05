@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnBack = new Button();
             SuspendLayout();
+            // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.Black;
+            btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(784, 459);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 0;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // frmBookshelfPuzzle
             // 
@@ -37,6 +51,7 @@
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 511);
+            Controls.Add(btnBack);
             DoubleBuffered = true;
             Name = "frmBookshelfPuzzle";
             StartPosition = FormStartPosition.CenterScreen;
@@ -45,5 +60,7 @@
         }
 
         #endregion
+
+        private Button btnBack;
     }
 }

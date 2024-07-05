@@ -16,5 +16,12 @@ namespace EscapeRoom
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmSouth frmSouth = new frmSouth();
+            frmSouth.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }
