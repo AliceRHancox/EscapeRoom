@@ -39,9 +39,10 @@
             btnNorth.BackColor = Color.Transparent;
             btnNorth.FlatStyle = FlatStyle.Popup;
             btnNorth.ForeColor = Color.White;
-            btnNorth.Location = new Point(790, 480);
+            btnNorth.Location = new Point(1467, 1024);
+            btnNorth.Margin = new Padding(6, 6, 6, 6);
             btnNorth.Name = "btnNorth";
-            btnNorth.Size = new Size(84, 33);
+            btnNorth.Size = new Size(156, 70);
             btnNorth.TabIndex = 1;
             btnNorth.Text = "North";
             btnNorth.UseVisualStyleBackColor = false;
@@ -52,9 +53,10 @@
             btnSouth.BackColor = Color.Transparent;
             btnSouth.FlatStyle = FlatStyle.Popup;
             btnSouth.ForeColor = Color.White;
-            btnSouth.Location = new Point(15, 480);
+            btnSouth.Location = new Point(28, 1024);
+            btnSouth.Margin = new Padding(6, 6, 6, 6);
             btnSouth.Name = "btnSouth";
-            btnSouth.Size = new Size(84, 33);
+            btnSouth.Size = new Size(156, 70);
             btnSouth.TabIndex = 2;
             btnSouth.Text = "South";
             btnSouth.UseVisualStyleBackColor = false;
@@ -63,24 +65,26 @@
             // picPainting
             // 
             picPainting.Image = Properties.Resources.Painting_layout_1;
-            picPainting.Location = new Point(335, 59);
+            picPainting.Location = new Point(611, 126);
+            picPainting.Margin = new Padding(6, 6, 6, 6);
             picPainting.Name = "picPainting";
-            picPainting.Size = new Size(200, 170);
+            picPainting.Size = new Size(400, 340);
+            picPainting.SizeMode = PictureBoxSizeMode.StretchImage;
             picPainting.TabIndex = 3;
             picPainting.TabStop = false;
-            picPainting.Click += picPainting_Click;
             // 
             // frmWest
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(884, 511);
+            ClientSize = new Size(1642, 1090);
             Controls.Add(picPainting);
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
             DoubleBuffered = true;
+            Margin = new Padding(6, 6, 6, 6);
             Name = "frmWest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmWest";

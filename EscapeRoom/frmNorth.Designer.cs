@@ -41,9 +41,10 @@
             btnWest.BackColor = Color.Transparent;
             btnWest.FlatStyle = FlatStyle.Popup;
             btnWest.ForeColor = Color.White;
-            btnWest.Location = new Point(15, 480);
+            btnWest.Location = new Point(28, 1024);
+            btnWest.Margin = new Padding(6, 6, 6, 6);
             btnWest.Name = "btnWest";
-            btnWest.Size = new Size(84, 33);
+            btnWest.Size = new Size(156, 70);
             btnWest.TabIndex = 0;
             btnWest.Text = "West";
             btnWest.UseVisualStyleBackColor = false;
@@ -54,9 +55,10 @@
             btnEast.BackColor = Color.Transparent;
             btnEast.FlatStyle = FlatStyle.Popup;
             btnEast.ForeColor = Color.White;
-            btnEast.Location = new Point(790, 480);
+            btnEast.Location = new Point(1467, 1024);
+            btnEast.Margin = new Padding(6, 6, 6, 6);
             btnEast.Name = "btnEast";
-            btnEast.Size = new Size(84, 33);
+            btnEast.Size = new Size(156, 70);
             btnEast.TabIndex = 1;
             btnEast.Text = "East";
             btnEast.UseVisualStyleBackColor = false;
@@ -64,7 +66,8 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(347, 142);
+            pictureBox1.Location = new Point(644, 303);
+            pictureBox1.Margin = new Padding(6, 6, 6, 6);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(0, 0);
             pictureBox1.TabIndex = 2;
@@ -73,26 +76,29 @@
             // picDoor
             // 
             picDoor.Image = Properties.Resources.DoorLayout_1;
-            picDoor.Location = new Point(347, 148);
+            picDoor.Location = new Point(644, 315);
+            picDoor.Margin = new Padding(6, 6, 6, 6);
             picDoor.Name = "picDoor";
-            picDoor.Size = new Size(190, 300);
+            picDoor.Size = new Size(353, 640);
+            picDoor.SizeMode = PictureBoxSizeMode.StretchImage;
             picDoor.TabIndex = 5;
             picDoor.TabStop = false;
             picDoor.Click += picDoor_Click;
             // 
             // frmNorth
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(884, 511);
+            ClientSize = new Size(1642, 1090);
             Controls.Add(picDoor);
             Controls.Add(pictureBox1);
             Controls.Add(btnEast);
             Controls.Add(btnWest);
             DoubleBuffered = true;
+            Margin = new Padding(6, 6, 6, 6);
             Name = "frmNorth";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmNorth";
