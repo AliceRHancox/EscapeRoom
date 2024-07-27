@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEast));
             btnNorth = new Button();
             btnSouth = new Button();
             picWindow = new PictureBox();
@@ -40,7 +41,7 @@
             btnNorth.FlatStyle = FlatStyle.Popup;
             btnNorth.ForeColor = Color.White;
             btnNorth.Location = new Point(28, 1024);
-            btnNorth.Margin = new Padding(6, 6, 6, 6);
+            btnNorth.Margin = new Padding(6);
             btnNorth.Name = "btnNorth";
             btnNorth.Size = new Size(156, 70);
             btnNorth.TabIndex = 1;
@@ -54,7 +55,7 @@
             btnSouth.FlatStyle = FlatStyle.Popup;
             btnSouth.ForeColor = Color.White;
             btnSouth.Location = new Point(1467, 1024);
-            btnSouth.Margin = new Padding(6, 6, 6, 6);
+            btnSouth.Margin = new Padding(6);
             btnSouth.Name = "btnSouth";
             btnSouth.Size = new Size(156, 70);
             btnSouth.TabIndex = 2;
@@ -64,9 +65,9 @@
             // 
             // picWindow
             // 
-            picWindow.Image = Properties.Resources.Window_Layout_1;
+            picWindow.Image = (Image)resources.GetObject("picWindow.Image");
             picWindow.Location = new Point(396, 303);
-            picWindow.Margin = new Padding(6, 6, 6, 6);
+            picWindow.Margin = new Padding(6);
             picWindow.Name = "picWindow";
             picWindow.Size = new Size(836, 491);
             picWindow.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -85,7 +86,7 @@
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmEast";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmEast";

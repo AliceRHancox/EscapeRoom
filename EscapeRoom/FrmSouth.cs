@@ -37,5 +37,10 @@ namespace EscapeRoom
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void frmSouth_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

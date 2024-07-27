@@ -16,5 +16,17 @@ namespace EscapeRoom
         {
             InitializeComponent();
         }
+
+        private void frmWindowPuzzle_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmEast frmEast = new frmEast();
+            frmEast.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

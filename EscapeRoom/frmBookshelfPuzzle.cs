@@ -23,5 +23,10 @@ namespace EscapeRoom
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
