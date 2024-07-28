@@ -10,7 +10,7 @@ namespace EscapeRoom
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            frmNorth frmNorth = new frmNorth();
+            frmNorth frmNorth = new frmNorth(CompletedPuzzles);
             frmNorth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

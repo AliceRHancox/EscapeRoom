@@ -12,16 +12,23 @@ namespace EscapeRoom
 {
     public partial class frmPaintingPuzzle : Form
     {
-        public frmPaintingPuzzle()
+        int CompletedPuzzles;
+        public frmPaintingPuzzle(int argsCompletedPuzzles)
         {
             InitializeComponent();
+            CompletedPuzzles = argsCompletedPuzzles;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest();
+            frmWest frmWest = new frmWest(CompletedPuzzles);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void frmPaintingPuzzle_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

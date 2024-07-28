@@ -89,6 +89,7 @@
             Name = "frmWest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmWest";
+            Load += frmWest_Load;
             ((System.ComponentModel.ISupportInitialize)picPainting).EndInit();
             ResumeLayout(false);
         }

@@ -90,6 +90,7 @@
             Name = "frmEast";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmEast";
+            Load += frmEast_Load;
             ((System.ComponentModel.ISupportInitialize)picWindow).EndInit();
             ResumeLayout(false);
         }

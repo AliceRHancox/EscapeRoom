@@ -32,6 +32,7 @@
             btnEast = new Button();
             pictureBox1 = new PictureBox();
             picDoor = new PictureBox();
+            lblProgress = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picDoor).BeginInit();
             SuspendLayout();
@@ -42,7 +43,7 @@
             btnWest.FlatStyle = FlatStyle.Popup;
             btnWest.ForeColor = Color.White;
             btnWest.Location = new Point(28, 1024);
-            btnWest.Margin = new Padding(6, 6, 6, 6);
+            btnWest.Margin = new Padding(6);
             btnWest.Name = "btnWest";
             btnWest.Size = new Size(156, 70);
             btnWest.TabIndex = 0;
@@ -56,7 +57,7 @@
             btnEast.FlatStyle = FlatStyle.Popup;
             btnEast.ForeColor = Color.White;
             btnEast.Location = new Point(1467, 1024);
-            btnEast.Margin = new Padding(6, 6, 6, 6);
+            btnEast.Margin = new Padding(6);
             btnEast.Name = "btnEast";
             btnEast.Size = new Size(156, 70);
             btnEast.TabIndex = 1;
@@ -67,7 +68,7 @@
             // pictureBox1
             // 
             pictureBox1.Location = new Point(644, 303);
-            pictureBox1.Margin = new Padding(6, 6, 6, 6);
+            pictureBox1.Margin = new Padding(6);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(0, 0);
             pictureBox1.TabIndex = 2;
@@ -77,13 +78,23 @@
             // 
             picDoor.Image = Properties.Resources.DoorLayout_1;
             picDoor.Location = new Point(644, 315);
-            picDoor.Margin = new Padding(6, 6, 6, 6);
+            picDoor.Margin = new Padding(6);
             picDoor.Name = "picDoor";
             picDoor.Size = new Size(353, 640);
             picDoor.SizeMode = PictureBoxSizeMode.StretchImage;
             picDoor.TabIndex = 5;
             picDoor.TabStop = false;
             picDoor.Click += picDoor_Click;
+            // 
+            // lblProgress
+            // 
+            lblProgress.AutoSize = true;
+            lblProgress.ForeColor = Color.White;
+            lblProgress.Location = new Point(715, 220);
+            lblProgress.Name = "lblProgress";
+            lblProgress.Size = new Size(0, 32);
+            lblProgress.TabIndex = 6;
+            lblProgress.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmNorth
             // 
@@ -93,12 +104,13 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(lblProgress);
             Controls.Add(picDoor);
             Controls.Add(pictureBox1);
             Controls.Add(btnEast);
             Controls.Add(btnWest);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmNorth";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmNorth";
@@ -106,6 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picDoor).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -114,5 +127,6 @@
         private Button btnEast;
         private PictureBox pictureBox1;
         private PictureBox picDoor;
+        private Label lblProgress;
     }
 }

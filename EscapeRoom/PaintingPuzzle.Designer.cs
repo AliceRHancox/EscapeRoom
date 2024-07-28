@@ -56,6 +56,7 @@
             Name = "frmPaintingPuzzle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PaintingPuzzle";
+            Load += frmPaintingPuzzle_Load;
             ResumeLayout(false);
         }
 
