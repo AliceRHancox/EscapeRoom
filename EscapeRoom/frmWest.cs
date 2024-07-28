@@ -35,5 +35,12 @@ namespace EscapeRoom
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void picPainting_Click_1(object sender, EventArgs e)
+        {
+            frmPaintingPuzzle frmPaintingPuzzle = new frmPaintingPuzzle();
+            frmPaintingPuzzle.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

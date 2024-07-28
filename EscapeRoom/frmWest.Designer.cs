@@ -40,7 +40,7 @@
             btnNorth.FlatStyle = FlatStyle.Popup;
             btnNorth.ForeColor = Color.White;
             btnNorth.Location = new Point(1467, 1024);
-            btnNorth.Margin = new Padding(6, 6, 6, 6);
+            btnNorth.Margin = new Padding(6);
             btnNorth.Name = "btnNorth";
             btnNorth.Size = new Size(156, 70);
             btnNorth.TabIndex = 1;
@@ -54,7 +54,7 @@
             btnSouth.FlatStyle = FlatStyle.Popup;
             btnSouth.ForeColor = Color.White;
             btnSouth.Location = new Point(28, 1024);
-            btnSouth.Margin = new Padding(6, 6, 6, 6);
+            btnSouth.Margin = new Padding(6);
             btnSouth.Name = "btnSouth";
             btnSouth.Size = new Size(156, 70);
             btnSouth.TabIndex = 2;
@@ -66,12 +66,13 @@
             // 
             picPainting.Image = Properties.Resources.Painting_layout_1;
             picPainting.Location = new Point(611, 126);
-            picPainting.Margin = new Padding(6, 6, 6, 6);
+            picPainting.Margin = new Padding(6);
             picPainting.Name = "picPainting";
             picPainting.Size = new Size(400, 340);
             picPainting.SizeMode = PictureBoxSizeMode.StretchImage;
             picPainting.TabIndex = 3;
             picPainting.TabStop = false;
+            picPainting.Click += picPainting_Click_1;
             // 
             // frmWest
             // 
@@ -84,7 +85,7 @@
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmWest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmWest";

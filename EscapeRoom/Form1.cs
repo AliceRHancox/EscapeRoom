@@ -2,6 +2,7 @@ namespace EscapeRoom
 {
     public partial class frmMainMenu : Form
     {
+        int CompletedPuzzles;
         public frmMainMenu()
         {
             InitializeComponent();
@@ -16,7 +17,14 @@ namespace EscapeRoom
 
         private void btnLeaderBoard_Click(object sender, EventArgs e)
         {
+            frmLeaderBoard frmLeaderBoard = new frmLeaderBoard();
+            frmLeaderBoard.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
 
+        private void frmMainMenu_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

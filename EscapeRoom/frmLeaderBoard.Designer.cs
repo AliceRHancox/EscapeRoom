@@ -1,6 +1,6 @@
 ﻿namespace EscapeRoom
 {
-    partial class frmPaintingPuzzle
+    partial class frmLeaderBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -33,29 +33,27 @@
             // 
             // btnBack
             // 
-            btnBack.BackColor = Color.Black;
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(1480, 975);
-            btnBack.Margin = new Padding(6);
+            btnBack.Location = new Point(1439, 986);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(139, 49);
-            btnBack.TabIndex = 1;
+            btnBack.Size = new Size(150, 46);
+            btnBack.TabIndex = 0;
             btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = false;
+            btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
-            // frmPaintingPuzzle
+            // frmLeaderBoard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1642, 1090);
             Controls.Add(btnBack);
-            Margin = new Padding(6);
-            Name = "frmPaintingPuzzle";
+            Name = "frmLeaderBoard";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "PaintingPuzzle";
+            Text = "frmLeaderBoard";
+            Load += frmLeaderBoard_Load;
             ResumeLayout(false);
         }
 

@@ -39,9 +39,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Palatino Linotype", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(236, 48);
+            label1.Location = new Point(438, 102);
+            label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(426, 87);
+            label1.Size = new Size(849, 172);
             label1.TabIndex = 0;
             label1.Text = "Escape Room";
             // 
@@ -50,9 +51,10 @@
             btnStart.FlatStyle = FlatStyle.Popup;
             btnStart.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStart.ForeColor = Color.White;
-            btnStart.Location = new Point(335, 209);
+            btnStart.Location = new Point(622, 446);
+            btnStart.Margin = new Padding(6, 6, 6, 6);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(190, 64);
+            btnStart.Size = new Size(353, 137);
             btnStart.TabIndex = 1;
             btnStart.Text = "Start Game";
             btnStart.UseVisualStyleBackColor = true;
@@ -63,9 +65,10 @@
             btnLeaderBoard.FlatStyle = FlatStyle.Popup;
             btnLeaderBoard.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLeaderBoard.ForeColor = Color.White;
-            btnLeaderBoard.Location = new Point(335, 289);
+            btnLeaderBoard.Location = new Point(622, 617);
+            btnLeaderBoard.Margin = new Padding(6, 6, 6, 6);
             btnLeaderBoard.Name = "btnLeaderBoard";
-            btnLeaderBoard.Size = new Size(190, 64);
+            btnLeaderBoard.Size = new Size(353, 137);
             btnLeaderBoard.TabIndex = 2;
             btnLeaderBoard.Text = "Leader Board";
             btnLeaderBoard.UseVisualStyleBackColor = true;
@@ -73,16 +76,18 @@
             // 
             // frmMainMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(884, 511);
+            ClientSize = new Size(1642, 1090);
             Controls.Add(btnLeaderBoard);
             Controls.Add(btnStart);
             Controls.Add(label1);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "frmMainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += frmMainMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

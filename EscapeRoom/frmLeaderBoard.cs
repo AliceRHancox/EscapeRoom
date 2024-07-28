@@ -10,17 +10,22 @@ using System.Windows.Forms;
 
 namespace EscapeRoom
 {
-    public partial class frmPaintingPuzzle : Form
+    public partial class frmLeaderBoard : Form
     {
-        public frmPaintingPuzzle()
+        public frmLeaderBoard()
         {
             InitializeComponent();
         }
 
+        private void frmLeaderBoard_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest();
-            frmWest.ShowDialog();
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            frmMainMenu.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
     }
