@@ -26,7 +26,32 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            const string BOOK_CODE = "umbrella";
+            try
+            {
+                string EnteredCode = txtBoxCode.Text.ToLower();
+                if (EnteredCode == BOOK_CODE)
+                {
+                    lblFeedBack.ForeColor = Color.Green;
+                    lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
+                }
+                else
+                {
+                    lblFeedBack.ForeColor = Color.Red;
+                    lblFeedBack.Text = "Incorrect code";
+
+                }
+            }
+            catch
+            {
+                lblFeedBack.ForeColor = Color.Red;
+                lblFeedBack.Text = "Invalid input";
+            }
         }
     }
 }

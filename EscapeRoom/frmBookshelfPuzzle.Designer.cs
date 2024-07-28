@@ -32,6 +32,7 @@
             lblEntercode = new Label();
             txtBoxCode = new TextBox();
             btnEnter = new Button();
+            lblFeedBack = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -74,12 +75,23 @@
             btnEnter.BackgroundImageLayout = ImageLayout.None;
             btnEnter.FlatStyle = FlatStyle.Popup;
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(677, 871);
+            btnEnter.Location = new Point(686, 864);
             btnEnter.Name = "btnEnter";
             btnEnter.Size = new Size(150, 46);
             btnEnter.TabIndex = 3;
             btnEnter.Text = "Enter";
             btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
+            // 
+            // lblFeedBack
+            // 
+            lblFeedBack.AutoSize = true;
+            lblFeedBack.BackColor = Color.Black;
+            lblFeedBack.ForeColor = Color.White;
+            lblFeedBack.Location = new Point(868, 874);
+            lblFeedBack.Name = "lblFeedBack";
+            lblFeedBack.Size = new Size(0, 32);
+            lblFeedBack.TabIndex = 4;
             // 
             // frmBookshelfPuzzle
             // 
@@ -88,6 +100,7 @@
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(lblFeedBack);
             Controls.Add(btnEnter);
             Controls.Add(txtBoxCode);
             Controls.Add(lblEntercode);
@@ -108,5 +121,6 @@
         private Label lblEntercode;
         private TextBox txtBoxCode;
         private Button btnEnter;
+        private Label lblFeedBack;
     }
 }

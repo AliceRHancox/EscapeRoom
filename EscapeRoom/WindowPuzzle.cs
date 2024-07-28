@@ -38,7 +38,7 @@ namespace EscapeRoom
                 if(EnteredCode == WINDOW_CODE)
                 {
                     lblFeedBack.ForeColor = Color.Green;
-                    lblFeedBack.Text = "Correct code was input. Unlocking puzzle.";
+                    lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
                 }
                 else
                 {
