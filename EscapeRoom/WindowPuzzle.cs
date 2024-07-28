@@ -28,5 +28,29 @@ namespace EscapeRoom
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            const int WINDOW_CODE = 301489;
+            try
+            {
+                int EnteredCode = Convert.ToInt32(txtBoxCode.Text);
+                if(EnteredCode == WINDOW_CODE)
+                {
+                    lblFeedBack.ForeColor = Color.Green;
+                    lblFeedBack.Text = "Correct code was input. Unlocking puzzle.";
+                }
+                else
+                {
+                    lblFeedBack.ForeColor = Color.Red;
+                    lblFeedBack.Text = "Incorrect code";
+                }
+            }
+            catch
+            {
+                lblFeedBack.ForeColor = Color.Red;
+                lblFeedBack.Text = "Invalid input";
+            }
+        }
     }
 }

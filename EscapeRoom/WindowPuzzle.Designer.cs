@@ -33,7 +33,8 @@
             lblRiddle = new Label();
             lblEntercode = new Label();
             txtBoxCode = new TextBox();
-            button1 = new Button();
+            btnEnter = new Button();
+            lblFeedBack = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -81,17 +82,28 @@
             txtBoxCode.Size = new Size(414, 39);
             txtBoxCode.TabIndex = 4;
             // 
-            // button1
+            // btnEnter
             // 
-            button1.BackColor = Color.Black;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(712, 1009);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 46);
-            button1.TabIndex = 5;
-            button1.Text = "Enter";
-            button1.UseVisualStyleBackColor = false;
+            btnEnter.BackColor = Color.Black;
+            btnEnter.FlatStyle = FlatStyle.Popup;
+            btnEnter.ForeColor = Color.White;
+            btnEnter.Location = new Point(712, 1009);
+            btnEnter.Name = "btnEnter";
+            btnEnter.Size = new Size(150, 46);
+            btnEnter.TabIndex = 5;
+            btnEnter.Text = "Enter";
+            btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
+            // 
+            // lblFeedBack
+            // 
+            lblFeedBack.AutoSize = true;
+            lblFeedBack.BackColor = Color.Black;
+            lblFeedBack.ForeColor = Color.White;
+            lblFeedBack.Location = new Point(913, 1009);
+            lblFeedBack.Name = "lblFeedBack";
+            lblFeedBack.Size = new Size(0, 32);
+            lblFeedBack.TabIndex = 6;
             // 
             // frmWindowPuzzle
             // 
@@ -100,7 +112,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
-            Controls.Add(button1);
+            Controls.Add(lblFeedBack);
+            Controls.Add(btnEnter);
             Controls.Add(txtBoxCode);
             Controls.Add(lblEntercode);
             Controls.Add(lblRiddle);
@@ -121,6 +134,7 @@
         private Label lblRiddle;
         private Label lblEntercode;
         private TextBox txtBoxCode;
-        private Button button1;
+        private Button btnEnter;
+        private Label lblFeedBack;
     }
 }
