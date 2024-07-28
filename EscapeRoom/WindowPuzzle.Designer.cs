@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWindowPuzzle));
             btnBack = new Button();
             lblRiddle = new Label();
-            label1 = new Label();
+            lblEntercode = new Label();
+            txtBoxCode = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btnBack
@@ -59,14 +61,37 @@
             lblRiddle.TabIndex = 2;
             lblRiddle.Text = "First came the stars, Then came the moon, Then all the little fish in the sea.\r\nThe sheep smiled and grazed in the dark, as the trees grew old and worn.\r\n\r\n";
             // 
-            // label1
+            // lblEntercode
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(132, 1015);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 32);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
+            lblEntercode.AutoSize = true;
+            lblEntercode.BackColor = Color.Transparent;
+            lblEntercode.ForeColor = Color.White;
+            lblEntercode.Location = new Point(121, 1009);
+            lblEntercode.Name = "lblEntercode";
+            lblEntercode.Size = new Size(137, 32);
+            lblEntercode.TabIndex = 3;
+            lblEntercode.Text = "Enter Code:";
+            // 
+            // txtBoxCode
+            // 
+            txtBoxCode.BackColor = Color.Black;
+            txtBoxCode.ForeColor = Color.White;
+            txtBoxCode.Location = new Point(264, 1009);
+            txtBoxCode.Name = "txtBoxCode";
+            txtBoxCode.Size = new Size(414, 39);
+            txtBoxCode.TabIndex = 4;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Black;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(712, 1009);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 46);
+            button1.TabIndex = 5;
+            button1.Text = "Enter";
+            button1.UseVisualStyleBackColor = false;
             // 
             // frmWindowPuzzle
             // 
@@ -75,7 +100,9 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
-            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(txtBoxCode);
+            Controls.Add(lblEntercode);
             Controls.Add(lblRiddle);
             Controls.Add(btnBack);
             DoubleBuffered = true;
@@ -92,6 +119,8 @@
 
         private Button btnBack;
         private Label lblRiddle;
-        private Label label1;
+        private Label lblEntercode;
+        private TextBox txtBoxCode;
+        private Button button1;
     }
 }
