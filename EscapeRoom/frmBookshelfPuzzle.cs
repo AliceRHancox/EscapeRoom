@@ -13,12 +13,12 @@ namespace EscapeRoom
     public partial class frmBookshelfPuzzle : Form
     {
         int CompletedPuzzles;
-        
+
         public frmBookshelfPuzzle(int argsCompletedPuzzles)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-            
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
@@ -56,6 +56,11 @@ namespace EscapeRoom
                 lblFeedBack.ForeColor = Color.Red;
                 lblFeedBack.Text = "Invalid input";
             }
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }

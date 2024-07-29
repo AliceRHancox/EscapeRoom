@@ -19,7 +19,7 @@ namespace EscapeRoom
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-            
+
         }
 
         private void frmNorth_Load(object sender, EventArgs e)
@@ -43,6 +43,11 @@ namespace EscapeRoom
         {
             frmWest frmWest = new frmWest(CompletedPuzzles);
             frmWest.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
             System.Windows.Forms.Application.ExitThread();
         }
     }

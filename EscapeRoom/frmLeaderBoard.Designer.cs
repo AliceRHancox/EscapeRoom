@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnBack = new Button();
+            btnEnd = new Button();
             SuspendLayout();
             // 
             // btnBack
@@ -43,12 +44,25 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
+            // btnEnd
+            // 
+            btnEnd.BackColor = Color.Black;
+            btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.ForeColor = Color.White;
+            btnEnd.Location = new Point(1439, 29);
+            btnEnd.Name = "btnEnd";
+            btnEnd.Size = new Size(182, 46);
+            btnEnd.TabIndex = 8;
+            btnEnd.Text = "Exit Program";
+            btnEnd.UseVisualStyleBackColor = false;
+            // 
             // frmLeaderBoard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(btnEnd);
             Controls.Add(btnBack);
             Name = "frmLeaderBoard";
             StartPosition = FormStartPosition.CenterScreen;
@@ -60,5 +74,6 @@
         #endregion
 
         private Button btnBack;
+        private Button btnEnd;
     }
 }

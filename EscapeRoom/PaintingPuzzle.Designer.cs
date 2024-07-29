@@ -41,6 +41,7 @@
             txtBoxCode = new TextBox();
             btnEnter = new Button();
             lblFeedBack = new Label();
+            btnEnd = new Button();
             SuspendLayout();
             // 
             // btnBack
@@ -186,6 +187,19 @@
             lblFeedBack.Size = new Size(270, 135);
             lblFeedBack.TabIndex = 13;
             // 
+            // btnEnd
+            // 
+            btnEnd.BackColor = Color.Black;
+            btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.ForeColor = Color.White;
+            btnEnd.Location = new Point(1437, 36);
+            btnEnd.Name = "btnEnd";
+            btnEnd.Size = new Size(182, 46);
+            btnEnd.TabIndex = 14;
+            btnEnd.Text = "Exit Program";
+            btnEnd.UseVisualStyleBackColor = false;
+            btnEnd.Click += btnEnd_Click;
+            // 
             // frmPaintingPuzzle
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -194,6 +208,7 @@
             BackgroundImage = Properties.Resources.Paintinglayout_2;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(btnEnd);
             Controls.Add(lblFeedBack);
             Controls.Add(btnEnter);
             Controls.Add(txtBoxCode);
@@ -232,5 +247,6 @@
         private TextBox txtBoxCode;
         private Button btnEnter;
         private Label lblFeedBack;
+        private Button btnEnd;
     }
 }

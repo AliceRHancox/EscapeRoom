@@ -11,7 +11,7 @@ namespace EscapeRoom
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            
+            tmrScore.Enabled = true;
             /*string[] PuzzleNames = {"Window", "Bookshelf", "Painting"};
             bool complete = false;
             for(int i = 0; i < PuzzleNames.Length; i++)
@@ -32,7 +32,13 @@ namespace EscapeRoom
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+
+        private void btnEnd_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }

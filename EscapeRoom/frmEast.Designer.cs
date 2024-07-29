@@ -32,6 +32,7 @@
             btnNorth = new Button();
             btnSouth = new Button();
             picWindow = new PictureBox();
+            btnEnd = new Button();
             ((System.ComponentModel.ISupportInitialize)picWindow).BeginInit();
             SuspendLayout();
             // 
@@ -75,6 +76,19 @@
             picWindow.TabStop = false;
             picWindow.Click += picWindow_Click;
             // 
+            // btnEnd
+            // 
+            btnEnd.BackColor = Color.Black;
+            btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.ForeColor = Color.White;
+            btnEnd.Location = new Point(1315, 12);
+            btnEnd.Name = "btnEnd";
+            btnEnd.Size = new Size(182, 46);
+            btnEnd.TabIndex = 8;
+            btnEnd.Text = "Exit Program";
+            btnEnd.UseVisualStyleBackColor = false;
+            btnEnd.Click += btnEnd_Click;
+            // 
             // frmEast
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -82,6 +96,7 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(btnEnd);
             Controls.Add(picWindow);
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
@@ -100,5 +115,6 @@
         private Button btnNorth;
         private Button btnSouth;
         private PictureBox picWindow;
+        private Button btnEnd;
     }
 }

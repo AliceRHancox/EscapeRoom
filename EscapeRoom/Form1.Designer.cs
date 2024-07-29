@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             btnStart = new Button();
             btnLeaderBoard = new Button();
+            tmrScore = new System.Windows.Forms.Timer(components);
+            btnEnd = new Button();
             SuspendLayout();
             // 
             // label1
@@ -52,7 +55,7 @@
             btnStart.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStart.ForeColor = Color.White;
             btnStart.Location = new Point(622, 446);
-            btnStart.Margin = new Padding(6, 6, 6, 6);
+            btnStart.Margin = new Padding(6);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(353, 137);
             btnStart.TabIndex = 1;
@@ -66,7 +69,7 @@
             btnLeaderBoard.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLeaderBoard.ForeColor = Color.White;
             btnLeaderBoard.Location = new Point(622, 617);
-            btnLeaderBoard.Margin = new Padding(6, 6, 6, 6);
+            btnLeaderBoard.Margin = new Padding(6);
             btnLeaderBoard.Name = "btnLeaderBoard";
             btnLeaderBoard.Size = new Size(353, 137);
             btnLeaderBoard.TabIndex = 2;
@@ -74,16 +77,30 @@
             btnLeaderBoard.UseVisualStyleBackColor = true;
             btnLeaderBoard.Click += btnLeaderBoard_Click;
             // 
+            // btnEnd
+            // 
+            btnEnd.BackColor = Color.Black;
+            btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.ForeColor = Color.White;
+            btnEnd.Location = new Point(1439, 24);
+            btnEnd.Name = "btnEnd";
+            btnEnd.Size = new Size(182, 46);
+            btnEnd.TabIndex = 8;
+            btnEnd.Text = "Exit Program";
+            btnEnd.UseVisualStyleBackColor = false;
+            btnEnd.Click += btnEnd_Click_1;
+            // 
             // frmMainMenu
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(btnEnd);
             Controls.Add(btnLeaderBoard);
             Controls.Add(btnStart);
             Controls.Add(label1);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmMainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -97,5 +114,7 @@
         private Label label1;
         private Button btnStart;
         private Button btnLeaderBoard;
+        private System.Windows.Forms.Timer tmrScore;
+        private Button btnEnd;
     }
 }

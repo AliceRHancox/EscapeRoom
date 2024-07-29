@@ -13,7 +13,7 @@ namespace EscapeRoom
     public partial class frmPaintingPuzzle : Form
     {
         int CompletedPuzzles;
-        
+
         public frmPaintingPuzzle(int argsCompletedPuzzles)
         {
             InitializeComponent();
@@ -56,6 +56,11 @@ namespace EscapeRoom
                 lblFeedBack.ForeColor = Color.Red;
                 lblFeedBack.Text = "Invalid input";
             }
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }

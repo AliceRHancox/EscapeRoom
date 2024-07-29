@@ -13,12 +13,12 @@ namespace EscapeRoom
     public partial class frmEast : Form
     {
         int CompletedPuzzles;
-        
+
         public frmEast(int argsCompletedPuzzles)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-            
+
         }
 
         private void picWindow_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace EscapeRoom
         private void frmEast_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
         }
     }
 }

@@ -33,6 +33,7 @@
             pictureBox1 = new PictureBox();
             picDoor = new PictureBox();
             lblProgress = new Label();
+            btnEnd = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picDoor).BeginInit();
             SuspendLayout();
@@ -96,6 +97,18 @@
             lblProgress.TabIndex = 6;
             lblProgress.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // btnEnd
+            // 
+            btnEnd.BackColor = Color.Black;
+            btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.ForeColor = Color.White;
+            btnEnd.Location = new Point(1328, 12);
+            btnEnd.Name = "btnEnd";
+            btnEnd.Size = new Size(182, 46);
+            btnEnd.TabIndex = 8;
+            btnEnd.Text = "Exit Program";
+            btnEnd.UseVisualStyleBackColor = false;
+            // 
             // frmNorth
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -104,6 +117,7 @@
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(btnEnd);
             Controls.Add(lblProgress);
             Controls.Add(picDoor);
             Controls.Add(pictureBox1);
@@ -128,5 +142,6 @@
         private PictureBox pictureBox1;
         private PictureBox picDoor;
         private Label lblProgress;
+        private Button btnEnd;
     }
 }

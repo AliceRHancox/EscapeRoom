@@ -34,6 +34,7 @@
             btnEnter = new Button();
             lblFeedBack = new Label();
             lblTest = new Label();
+            btnEnd = new Button();
             SuspendLayout();
             // 
             // btnBack
@@ -102,6 +103,19 @@
             lblTest.TabIndex = 5;
             lblTest.Text = "label1";
             // 
+            // btnEnd
+            // 
+            btnEnd.BackColor = Color.Black;
+            btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.ForeColor = Color.White;
+            btnEnd.Location = new Point(1413, 12);
+            btnEnd.Name = "btnEnd";
+            btnEnd.Size = new Size(182, 46);
+            btnEnd.TabIndex = 8;
+            btnEnd.Text = "Exit Program";
+            btnEnd.UseVisualStyleBackColor = false;
+            btnEnd.Click += btnEnd_Click;
+            // 
             // frmBookshelfPuzzle
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -109,6 +123,7 @@
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(btnEnd);
             Controls.Add(lblTest);
             Controls.Add(lblFeedBack);
             Controls.Add(btnEnter);
@@ -133,5 +148,6 @@
         private Button btnEnter;
         private Label lblFeedBack;
         private Label lblTest;
+        private Button btnEnd;
     }
 }
