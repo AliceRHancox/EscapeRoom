@@ -28,5 +28,10 @@ namespace EscapeRoom
             frmMainMenu.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

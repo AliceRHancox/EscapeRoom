@@ -55,6 +55,7 @@
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
+            btnEnd.Click += btnEnd_Click;
             // 
             // frmLeaderBoard
             // 
