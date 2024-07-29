@@ -28,9 +28,9 @@ namespace EscapeRoom
 
         private void btnNorth_Click(object sender, EventArgs e)
         {
-            frmNorth frmNorth = new frmNorth(CompletedPuzzles);
+            /*frmNorth frmNorth = new frmNorth(CompletedPuzzles);
             frmNorth.ShowDialog();
-            System.Windows.Forms.Application.ExitThread();
+            System.Windows.Forms.Application.ExitThread();*/
         }
 
         private void btnSouth_Click(object sender, EventArgs e)

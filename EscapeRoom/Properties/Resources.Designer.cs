@@ -113,6 +113,16 @@ namespace EscapeRoom.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paintinglayout_2 {
+            get {
+                object obj = ResourceManager.GetObject("Paintinglayout 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RoomLayout1 {
             get {
                 object obj = ResourceManager.GetObject("RoomLayout1", resourceCulture);

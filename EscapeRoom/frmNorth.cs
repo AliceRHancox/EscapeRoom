@@ -14,7 +14,7 @@ namespace EscapeRoom
     {
         int CompletedPuzzles;
         const int MAX_PUZZLES = 3;
-        
+        //List<Puzzles> Puzzle;
         public frmNorth(int argsCompletedPuzzles)
         {
             InitializeComponent();

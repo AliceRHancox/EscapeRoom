@@ -13,7 +13,7 @@ namespace EscapeRoom
     public partial class frmWindowPuzzle : Form
     {
         int CompletedPuzzles;
-        
+        List<Puzzles> Puzzle = new List<Puzzles>();
         public frmWindowPuzzle(int argsCompletedPuzzles)
         {
             InitializeComponent();
