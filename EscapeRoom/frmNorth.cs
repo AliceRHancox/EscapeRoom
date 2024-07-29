@@ -46,7 +46,8 @@ namespace EscapeRoom
             System.Windows.Forms.Application.ExitThread();
         }
 
-        private void btnEnd_Click(object sender, EventArgs e)
+
+        private void btnEnd_Click_1(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
         }
