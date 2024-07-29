@@ -13,10 +13,12 @@ namespace EscapeRoom
     public partial class frmSouth : Form
     {
         int CompletedPuzzles;
+        
         public frmSouth(int argsCompletedPuzzles)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
+            
         }
 
         private void picBookShelf_Click(object sender, EventArgs e)

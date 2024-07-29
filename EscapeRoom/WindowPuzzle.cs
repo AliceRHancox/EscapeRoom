@@ -13,6 +13,7 @@ namespace EscapeRoom
     public partial class frmWindowPuzzle : Form
     {
         int CompletedPuzzles;
+        
         public frmWindowPuzzle(int argsCompletedPuzzles)
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace EscapeRoom
 
         private void frmWindowPuzzle_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -41,6 +42,7 @@ namespace EscapeRoom
                 {
                     lblFeedBack.ForeColor = Color.Green;
                     lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
+                    
                 }
                 else
                 {

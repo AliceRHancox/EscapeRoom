@@ -3,6 +3,7 @@ namespace EscapeRoom
     public partial class frmMainMenu : Form
     {
         int CompletedPuzzles;
+        List<Puzzles> Puzzle = new List<Puzzles>();
         public frmMainMenu()
         {
             InitializeComponent();
@@ -10,7 +11,14 @@ namespace EscapeRoom
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            frmNorth frmNorth = new frmNorth(CompletedPuzzles);
+            
+            string[] PuzzleNames = {"Window", "Bookshelf", "Painting"};
+            bool complete = false;
+            for(int i = 0; i < PuzzleNames.Length; i++)
+            {
+                Puzzle.Add(new Puzzles(PuzzleNames[i], complete));
+            }
+            frmNorth frmNorth = new frmNorth(CompletedPuzzles, Puzzle);
             frmNorth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

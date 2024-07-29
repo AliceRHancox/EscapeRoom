@@ -14,10 +14,12 @@ namespace EscapeRoom
     {
         int CompletedPuzzles;
         const int MAX_PUZZLES = 3;
+        
         public frmNorth(int argsCompletedPuzzles)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
+            
         }
 
         private void frmNorth_Load(object sender, EventArgs e)
