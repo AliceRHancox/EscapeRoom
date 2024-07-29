@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWest));
             btnNorth = new Button();
             btnSouth = new Button();
             picPainting = new PictureBox();
@@ -64,7 +65,7 @@
             // 
             // picPainting
             // 
-            picPainting.Image = Properties.Resources.Painting_layout_1;
+            picPainting.Image = (Image)resources.GetObject("picPainting.Image");
             picPainting.Location = new Point(611, 126);
             picPainting.Margin = new Padding(6);
             picPainting.Name = "picPainting";

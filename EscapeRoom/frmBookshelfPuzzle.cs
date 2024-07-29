@@ -30,7 +30,7 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnEnter_Click(object sender, EventArgs e)

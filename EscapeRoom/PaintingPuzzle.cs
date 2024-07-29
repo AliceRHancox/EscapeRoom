@@ -18,7 +18,7 @@ namespace EscapeRoom
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-            
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -31,6 +31,31 @@ namespace EscapeRoom
         private void frmPaintingPuzzle_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            const int PAINT_CODE = 10;
+            try
+            {
+                int EnteredCode = Convert.ToInt32(txtBoxCode.Text);
+                if (EnteredCode == PAINT_CODE)
+                {
+                    lblFeedBack.ForeColor = Color.Green;
+                    lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
+
+                }
+                else
+                {
+                    lblFeedBack.ForeColor = Color.Red;
+                    lblFeedBack.Text = "Incorrect code";
+                }
+            }
+            catch
+            {
+                lblFeedBack.ForeColor = Color.Red;
+                lblFeedBack.Text = "Invalid input";
+            }
         }
     }
 }

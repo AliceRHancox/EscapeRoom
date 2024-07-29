@@ -33,6 +33,7 @@
             txtBoxCode = new TextBox();
             btnEnter = new Button();
             lblFeedBack = new Label();
+            lblTest = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -93,6 +94,14 @@
             lblFeedBack.Size = new Size(0, 32);
             lblFeedBack.TabIndex = 4;
             // 
+            // lblTest
+            // 
+            lblTest.Location = new Point(156, 269);
+            lblTest.Name = "lblTest";
+            lblTest.Size = new Size(82, 467);
+            lblTest.TabIndex = 5;
+            lblTest.Text = "label1";
+            // 
             // frmBookshelfPuzzle
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -100,6 +109,7 @@
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(lblTest);
             Controls.Add(lblFeedBack);
             Controls.Add(btnEnter);
             Controls.Add(txtBoxCode);
@@ -122,5 +132,6 @@
         private TextBox txtBoxCode;
         private Button btnEnter;
         private Label lblFeedBack;
+        private Label lblTest;
     }
 }

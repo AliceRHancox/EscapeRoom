@@ -158,6 +158,7 @@
             // txtBoxCode
             // 
             txtBoxCode.BackColor = Color.Black;
+            txtBoxCode.ForeColor = Color.White;
             txtBoxCode.Location = new Point(31, 179);
             txtBoxCode.Name = "txtBoxCode";
             txtBoxCode.Size = new Size(238, 39);
@@ -175,14 +176,14 @@
             btnEnter.TabIndex = 12;
             btnEnter.Text = "Enter";
             btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
             // 
             // lblFeedBack
             // 
-            lblFeedBack.AutoSize = true;
             lblFeedBack.ForeColor = Color.White;
             lblFeedBack.Location = new Point(31, 366);
             lblFeedBack.Name = "lblFeedBack";
-            lblFeedBack.Size = new Size(0, 32);
+            lblFeedBack.Size = new Size(270, 135);
             lblFeedBack.TabIndex = 13;
             // 
             // frmPaintingPuzzle
