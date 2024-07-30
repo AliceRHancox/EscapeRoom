@@ -12,11 +12,11 @@ namespace EscapeRoom
         private void btnStart_Click(object sender, EventArgs e)
         {
             tmrScore.Enabled = true;
-            string[] PuzzleNames = {"Window", "Bookshelf", "Painting"};
+            string[] Puzzlecodes = {"umbrella", "301489", "10"};
             bool complete = false;
-            for(int i = 0; i < PuzzleNames.Length; i++)
+            for(int i = 0; i < Puzzlecodes.Length; i++)
             {
-                allPuzzles.Add(new Puzzles(PuzzleNames[i], complete));
+                allPuzzles.Add(new Puzzles(Puzzlecodes[i], complete));
             }
             frmNorth frmNorth = new frmNorth(CompletedPuzzles, allPuzzles);
             frmNorth.ShowDialog();

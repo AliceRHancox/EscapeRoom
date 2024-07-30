@@ -14,6 +14,7 @@ namespace EscapeRoom
     {
         int CompletedPuzzles;
         List<Puzzles> allPuzzles;
+        const string BOOK_CODE = "umbrella";
         public frmBookshelfPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
         {
             InitializeComponent();
@@ -30,32 +31,54 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < allPuzzles.Count; i++)
+            {
+                if (BOOK_CODE == allPuzzles[i].PuzzleCode)
+                {
+                    if (allPuzzles[i].Complete == true)
+                    {
+                        txtBoxCode.Visible = false;
+                    }
+                }
+            }
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            const string BOOK_CODE = "umbrella";
-            try
-            {
-                string EnteredCode = txtBoxCode.Text.ToLower();
-                if (EnteredCode == BOOK_CODE)
-                {
-                    lblFeedBack.ForeColor = Color.Green;
-                    lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
-                }
-                else
-                {
-                    lblFeedBack.ForeColor = Color.Red;
-                    lblFeedBack.Text = "Incorrect code";
 
-                }
-            }
-            catch
+            for (int i = 0; i < allPuzzles.Count; i++)
             {
-                lblFeedBack.ForeColor = Color.Red;
-                lblFeedBack.Text = "Invalid input";
+                if(BOOK_CODE == allPuzzles[i].PuzzleCode)
+                {
+                    
+                    try
+                    {
+                        string EnteredCode = txtBoxCode.Text.ToLower();
+                        if (EnteredCode == BOOK_CODE)
+                        {
+                            lblFeedBack.ForeColor = Color.Green;
+                            lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
+                            allPuzzles[i].Complete = true;
+                            txtBoxCode.Visible=false;
+                        }
+                        else
+                        {
+                            lblFeedBack.ForeColor = Color.Red;
+                            lblFeedBack.Text = "Incorrect code";
+
+                        }
+                    }
+                    catch
+                    {
+                        lblFeedBack.ForeColor = Color.Red;
+                        lblFeedBack.Text = "Invalid input";
+                    }
+                    
+                    
+                }
+                
             }
+            
         }
 
         private void btnEnd_Click(object sender, EventArgs e)

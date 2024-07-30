@@ -8,17 +8,17 @@ namespace EscapeRoom
 {
     public class Puzzles
     {
-        string Puzzlename;
+        string Puzzlecode;
         bool complete;
-        public Puzzles(string argsPuzzleName, bool argscomplete) 
+        public Puzzles(string argsPuzzlecode, bool argscomplete) 
         { 
-            Puzzlename = argsPuzzleName;
+            Puzzlecode = argsPuzzlecode;
             complete = argscomplete;
         }
 
-        public string PuzzleName
+        public string PuzzleCode
         {
-            get { return Puzzlename; }
+            get { return Puzzlecode; }
         }
     
         public bool Complete
