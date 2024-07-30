@@ -39,7 +39,7 @@
             lblNumber8 = new Label();
             lblMissingNumber = new Label();
             txtBoxCode = new TextBox();
-            btnEnter = new Button();
+            btnEntercode = new Button();
             lblFeedBack = new Label();
             btnEnd = new Button();
             SuspendLayout();
@@ -165,19 +165,19 @@
             txtBoxCode.Size = new Size(238, 39);
             txtBoxCode.TabIndex = 11;
             // 
-            // btnEnter
+            // btnEntercode
             // 
-            btnEnter.BackColor = Color.Black;
-            btnEnter.BackgroundImageLayout = ImageLayout.None;
-            btnEnter.FlatStyle = FlatStyle.Popup;
-            btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(31, 256);
-            btnEnter.Name = "btnEnter";
-            btnEnter.Size = new Size(150, 46);
-            btnEnter.TabIndex = 12;
-            btnEnter.Text = "Enter";
-            btnEnter.UseVisualStyleBackColor = false;
-            btnEnter.Click += btnEnter_Click;
+            btnEntercode.BackColor = Color.Black;
+            btnEntercode.BackgroundImageLayout = ImageLayout.None;
+            btnEntercode.FlatStyle = FlatStyle.Popup;
+            btnEntercode.ForeColor = Color.White;
+            btnEntercode.Location = new Point(31, 256);
+            btnEntercode.Name = "btnEntercode";
+            btnEntercode.Size = new Size(150, 46);
+            btnEntercode.TabIndex = 12;
+            btnEntercode.Text = "Enter";
+            btnEntercode.UseVisualStyleBackColor = false;
+            btnEntercode.Click += btnEnter_Click;
             // 
             // lblFeedBack
             // 
@@ -210,7 +210,7 @@
             ClientSize = new Size(1642, 1090);
             Controls.Add(btnEnd);
             Controls.Add(lblFeedBack);
-            Controls.Add(btnEnter);
+            Controls.Add(btnEntercode);
             Controls.Add(txtBoxCode);
             Controls.Add(lblMissingNumber);
             Controls.Add(lblNumber8);
@@ -245,7 +245,7 @@
         private Label lblNumber8;
         private Label lblMissingNumber;
         private TextBox txtBoxCode;
-        private Button btnEnter;
+        private Button btnEntercode;
         private Label lblFeedBack;
         private Button btnEnd;
     }
