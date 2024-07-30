@@ -14,12 +14,12 @@ namespace EscapeRoom
     {
         int CompletedPuzzles;
         const int MAX_PUZZLES = 3;
-        //List<Puzzles> Puzzle;
-        public frmNorth(int argsCompletedPuzzles)
+        List<Puzzles> allPuzzles;
+        public frmNorth(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-
+            allPuzzles = argspuzzle;
         }
 
         private void frmNorth_Load(object sender, EventArgs e)
@@ -34,14 +34,14 @@ namespace EscapeRoom
 
         private void btnEast_Click(object sender, EventArgs e)
         {
-            frmEast frmEast = new frmEast(CompletedPuzzles);
+            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
 
         private void btnWest_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest(CompletedPuzzles);
+            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

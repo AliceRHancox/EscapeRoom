@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EscapeRoom
 {
-    internal class Puzzles
+    public class Puzzles
     {
         string Puzzlename;
         bool complete;

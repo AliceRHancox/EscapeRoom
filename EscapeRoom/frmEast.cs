@@ -13,31 +13,32 @@ namespace EscapeRoom
     public partial class frmEast : Form
     {
         int CompletedPuzzles;
+        List<Puzzles> allPuzzles;
 
-        public frmEast(int argsCompletedPuzzles)
+        public frmEast(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-
+            allPuzzles = argspuzzle;
         }
 
         private void picWindow_Click(object sender, EventArgs e)
         {
-            frmWindowPuzzle frmWindowPuzzle = new frmWindowPuzzle(CompletedPuzzles);
+            frmWindowPuzzle frmWindowPuzzle = new frmWindowPuzzle(CompletedPuzzles, allPuzzles);
             frmWindowPuzzle.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
 
         private void btnNorth_Click(object sender, EventArgs e)
         {
-            /*frmNorth frmNorth = new frmNorth(CompletedPuzzles);
+            frmNorth frmNorth = new frmNorth(CompletedPuzzles, allPuzzles);
             frmNorth.ShowDialog();
-            System.Windows.Forms.Application.ExitThread();*/
+            System.Windows.Forms.Application.ExitThread();
         }
 
         private void btnSouth_Click(object sender, EventArgs e)
         {
-            frmSouth frmSouth = new frmSouth(CompletedPuzzles);
+            frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles);
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

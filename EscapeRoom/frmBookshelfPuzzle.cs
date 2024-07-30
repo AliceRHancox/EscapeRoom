@@ -13,17 +13,17 @@ namespace EscapeRoom
     public partial class frmBookshelfPuzzle : Form
     {
         int CompletedPuzzles;
-
-        public frmBookshelfPuzzle(int argsCompletedPuzzles)
+        List<Puzzles> allPuzzles;
+        public frmBookshelfPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
-
+            allPuzzles = argspuzzle;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmSouth frmSouth = new frmSouth(CompletedPuzzles);
+            frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles);
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
@@ -61,6 +61,13 @@ namespace EscapeRoom
         private void btnEnd_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void lblTest_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.TranslateTransform(30, 20);
+            e.Graphics.RotateTransform(90);
+            
         }
     }
 }

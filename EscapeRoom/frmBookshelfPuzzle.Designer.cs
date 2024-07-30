@@ -102,6 +102,7 @@
             lblTest.Size = new Size(82, 467);
             lblTest.TabIndex = 5;
             lblTest.Text = "label1";
+            lblTest.Paint += lblTest_Paint;
             // 
             // btnEnd
             // 
