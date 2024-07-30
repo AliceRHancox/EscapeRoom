@@ -37,7 +37,11 @@ namespace EscapeRoom
                 {
                     if (allPuzzles[i].Complete == true)
                     {
+                        lblFeedBack.ForeColor = Color.Green;
+                        lblFeedBack.Text = "Puzzle already unlocked";
                         txtBoxCode.Visible = false;
+                        btnEnter.Visible = false;
+                        lblEntercode.Visible = false;
                     }
                 }
             }
@@ -60,6 +64,8 @@ namespace EscapeRoom
                             lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
                             allPuzzles[i].Complete = true;
                             txtBoxCode.Visible=false;
+                            btnEnter.Visible = false;
+                            lblEntercode.Visible = false;
                         }
                         else
                         {
