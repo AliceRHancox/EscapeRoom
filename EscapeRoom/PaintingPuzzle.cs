@@ -42,6 +42,7 @@ namespace EscapeRoom
                         txtBoxCode.Visible = false;
                         btnEntercode.Visible = false;
                         lblMissingNumber.Visible = false;
+                        
                     }
                 }
             }
@@ -64,7 +65,7 @@ namespace EscapeRoom
                             txtBoxCode.Visible = false;
                             btnEntercode.Visible = false;
                             lblMissingNumber.Visible = false;
-
+                            CompletedPuzzles = CompletedPuzzles + 1;
                         }
                         else
                         {

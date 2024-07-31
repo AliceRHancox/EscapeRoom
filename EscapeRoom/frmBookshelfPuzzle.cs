@@ -66,6 +66,7 @@ namespace EscapeRoom
                             txtBoxCode.Visible=false;
                             btnEnter.Visible = false;
                             lblEntercode.Visible = false;
+                            CompletedPuzzles = CompletedPuzzles + 1;
                         }
                         else
                         {
