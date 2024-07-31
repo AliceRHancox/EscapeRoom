@@ -63,6 +63,7 @@
             Controls.Add(lblInfo);
             Controls.Add(lblEndInfo);
             Name = "frmEndScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmEndScreen";
             ResumeLayout(false);
         }

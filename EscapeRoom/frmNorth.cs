@@ -29,7 +29,12 @@ namespace EscapeRoom
 
         private void picDoor_Click(object sender, EventArgs e)
         {
-
+            if(CompletedPuzzles == MAX_PUZZLES)
+            {
+                frmEndScreen frmEndScreen = new frmEndScreen();
+                frmEndScreen.ShowDialog();
+                System.Windows.Forms.Application.ExitThread();
+            }
         }
 
         private void btnEast_Click(object sender, EventArgs e)
