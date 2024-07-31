@@ -36,6 +36,7 @@
             btnEnter = new Button();
             btnMainMenu = new Button();
             btnLeaderBoard = new Button();
+            lblWrong = new Label();
             SuspendLayout();
             // 
             // lblEndInfo
@@ -65,11 +66,11 @@
             // 
             lblShowTime.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblShowTime.ForeColor = Color.White;
-            lblShowTime.Location = new Point(449, 368);
+            lblShowTime.Location = new Point(493, 365);
             lblShowTime.Name = "lblShowTime";
-            lblShowTime.Size = new Size(725, 258);
+            lblShowTime.Size = new Size(654, 172);
             lblShowTime.TabIndex = 2;
-            lblShowTime.TextAlign = ContentAlignment.MiddleCenter;
+            lblShowTime.TextAlign = ContentAlignment.TopCenter;
             // 
             // lblPlease
             // 
@@ -85,7 +86,7 @@
             // 
             txtBoxName.Location = new Point(96, 915);
             txtBoxName.Name = "txtBoxName";
-            txtBoxName.Size = new Size(492, 39);
+            txtBoxName.Size = new Size(577, 39);
             txtBoxName.TabIndex = 4;
             // 
             // btnEnter
@@ -94,26 +95,28 @@
             btnEnter.BackgroundImageLayout = ImageLayout.None;
             btnEnter.FlatStyle = FlatStyle.Popup;
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(622, 915);
+            btnEnter.Location = new Point(730, 903);
             btnEnter.Name = "btnEnter";
-            btnEnter.Size = new Size(150, 46);
+            btnEnter.Size = new Size(195, 62);
             btnEnter.TabIndex = 5;
-            btnEnter.Text = "Enter";
+            btnEnter.Text = "Confirm Name";
             btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
             // 
             // btnMainMenu
             // 
             btnMainMenu.BackColor = Color.Black;
             btnMainMenu.BackgroundImageLayout = ImageLayout.None;
             btnMainMenu.FlatStyle = FlatStyle.Popup;
-            btnMainMenu.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMainMenu.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnMainMenu.ForeColor = Color.White;
-            btnMainMenu.Location = new Point(1019, 880);
+            btnMainMenu.Location = new Point(183, 588);
             btnMainMenu.Name = "btnMainMenu";
-            btnMainMenu.Size = new Size(208, 117);
+            btnMainMenu.Size = new Size(363, 251);
             btnMainMenu.TabIndex = 6;
             btnMainMenu.Text = "Main Menu";
             btnMainMenu.UseVisualStyleBackColor = false;
+            btnMainMenu.Visible = false;
             btnMainMenu.Click += btnMainMenu_Click;
             // 
             // btnLeaderBoard
@@ -121,15 +124,25 @@
             btnLeaderBoard.BackColor = Color.Black;
             btnLeaderBoard.BackgroundImageLayout = ImageLayout.None;
             btnLeaderBoard.FlatStyle = FlatStyle.Popup;
-            btnLeaderBoard.Font = new Font("Segoe UI", 10.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLeaderBoard.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLeaderBoard.ForeColor = Color.White;
-            btnLeaderBoard.Location = new Point(1249, 880);
+            btnLeaderBoard.Location = new Point(1042, 588);
             btnLeaderBoard.Name = "btnLeaderBoard";
-            btnLeaderBoard.Size = new Size(230, 117);
+            btnLeaderBoard.Size = new Size(348, 251);
             btnLeaderBoard.TabIndex = 7;
             btnLeaderBoard.Text = "Leader Board";
             btnLeaderBoard.UseVisualStyleBackColor = false;
+            btnLeaderBoard.Visible = false;
             btnLeaderBoard.Click += btnLeaderBoard_Click;
+            // 
+            // lblWrong
+            // 
+            lblWrong.AutoSize = true;
+            lblWrong.ForeColor = Color.White;
+            lblWrong.Location = new Point(96, 997);
+            lblWrong.Name = "lblWrong";
+            lblWrong.Size = new Size(0, 32);
+            lblWrong.TabIndex = 8;
             // 
             // frmEndScreen
             // 
@@ -137,6 +150,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(lblWrong);
             Controls.Add(btnLeaderBoard);
             Controls.Add(btnMainMenu);
             Controls.Add(btnEnter);
@@ -162,5 +176,6 @@
         private Button btnEnter;
         private Button btnMainMenu;
         private Button btnLeaderBoard;
+        private Label lblWrong;
     }
 }
