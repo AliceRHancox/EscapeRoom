@@ -16,5 +16,19 @@ namespace EscapeRoom
         {
             InitializeComponent();
         }
+
+        private void btnLeaderBoard_Click(object sender, EventArgs e)
+        {
+            frmLeaderBoard frmLeaderBoard = new frmLeaderBoard();
+            frmLeaderBoard.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            frmMainMenu.ShowDialog();
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

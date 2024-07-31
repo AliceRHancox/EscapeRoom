@@ -114,6 +114,7 @@
             btnMainMenu.TabIndex = 6;
             btnMainMenu.Text = "Main Menu";
             btnMainMenu.UseVisualStyleBackColor = false;
+            btnMainMenu.Click += btnMainMenu_Click;
             // 
             // btnLeaderBoard
             // 
@@ -128,6 +129,7 @@
             btnLeaderBoard.TabIndex = 7;
             btnLeaderBoard.Text = "Leader Board";
             btnLeaderBoard.UseVisualStyleBackColor = false;
+            btnLeaderBoard.Click += btnLeaderBoard_Click;
             // 
             // frmEndScreen
             // 

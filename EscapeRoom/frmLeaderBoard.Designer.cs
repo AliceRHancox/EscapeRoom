@@ -36,11 +36,11 @@
             // 
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(1439, 986);
+            btnBack.Location = new Point(1401, 973);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(150, 46);
+            btnBack.Size = new Size(188, 59);
             btnBack.TabIndex = 0;
-            btnBack.Text = "Back";
+            btnBack.Text = "Main Menu";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
