@@ -33,8 +33,8 @@
             txtBoxCode = new TextBox();
             btnEnter = new Button();
             lblFeedBack = new Label();
-            lblTest = new Label();
             btnEnd = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -42,10 +42,9 @@
             btnBack.BackColor = Color.Black;
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(1456, 979);
-            btnBack.Margin = new Padding(6);
+            btnBack.Location = new Point(784, 459);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(139, 49);
+            btnBack.Size = new Size(75, 23);
             btnBack.TabIndex = 0;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -56,9 +55,10 @@
             lblEntercode.AutoSize = true;
             lblEntercode.BackColor = Color.Black;
             lblEntercode.ForeColor = Color.White;
-            lblEntercode.Location = new Point(12, 871);
+            lblEntercode.Location = new Point(6, 408);
+            lblEntercode.Margin = new Padding(2, 0, 2, 0);
             lblEntercode.Name = "lblEntercode";
-            lblEntercode.Size = new Size(222, 32);
+            lblEntercode.Size = new Size(110, 15);
             lblEntercode.TabIndex = 1;
             lblEntercode.Text = "Enter Hidden Code:";
             // 
@@ -66,9 +66,10 @@
             // 
             txtBoxCode.BackColor = Color.Black;
             txtBoxCode.ForeColor = Color.White;
-            txtBoxCode.Location = new Point(240, 871);
+            txtBoxCode.Location = new Point(129, 408);
+            txtBoxCode.Margin = new Padding(2, 1, 2, 1);
             txtBoxCode.Name = "txtBoxCode";
-            txtBoxCode.Size = new Size(419, 39);
+            txtBoxCode.Size = new Size(227, 23);
             txtBoxCode.TabIndex = 2;
             // 
             // btnEnter
@@ -77,9 +78,10 @@
             btnEnter.BackgroundImageLayout = ImageLayout.None;
             btnEnter.FlatStyle = FlatStyle.Popup;
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(686, 864);
+            btnEnter.Location = new Point(369, 405);
+            btnEnter.Margin = new Padding(2, 1, 2, 1);
             btnEnter.Name = "btnEnter";
-            btnEnter.Size = new Size(150, 46);
+            btnEnter.Size = new Size(81, 22);
             btnEnter.TabIndex = 3;
             btnEnter.Text = "Enter";
             btnEnter.UseVisualStyleBackColor = false;
@@ -90,49 +92,51 @@
             lblFeedBack.AutoSize = true;
             lblFeedBack.BackColor = Color.Black;
             lblFeedBack.ForeColor = Color.White;
-            lblFeedBack.Location = new Point(868, 874);
+            lblFeedBack.Location = new Point(467, 410);
+            lblFeedBack.Margin = new Padding(2, 0, 2, 0);
             lblFeedBack.Name = "lblFeedBack";
-            lblFeedBack.Size = new Size(0, 32);
+            lblFeedBack.Size = new Size(0, 15);
             lblFeedBack.TabIndex = 4;
-            // 
-            // lblTest
-            // 
-            lblTest.Location = new Point(156, 269);
-            lblTest.Name = "lblTest";
-            lblTest.Size = new Size(82, 467);
-            lblTest.TabIndex = 5;
-            lblTest.Text = "label1";
-            lblTest.Paint += lblTest_Paint;
             // 
             // btnEnd
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(1413, 12);
+            btnEnd.Location = new Point(761, 6);
+            btnEnd.Margin = new Padding(2, 1, 2, 1);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(182, 46);
+            btnEnd.Size = new Size(98, 22);
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
             btnEnd.Click += btnEnd_Click;
             // 
+            // label1
+            // 
+            label1.BackColor = Color.White;
+            label1.Location = new Point(71, 126);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 232);
+            label1.TabIndex = 9;
+            label1.Paint += lblTest_Paint;
+            // 
             // frmBookshelfPuzzle
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1642, 1090);
+            ClientSize = new Size(884, 511);
+            Controls.Add(label1);
             Controls.Add(btnEnd);
-            Controls.Add(lblTest);
             Controls.Add(lblFeedBack);
             Controls.Add(btnEnter);
             Controls.Add(txtBoxCode);
             Controls.Add(lblEntercode);
             Controls.Add(btnBack);
             DoubleBuffered = true;
-            Margin = new Padding(6);
             Name = "frmBookshelfPuzzle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmBookshelfPuzzle";
@@ -148,7 +152,7 @@
         private TextBox txtBoxCode;
         private Button btnEnter;
         private Label lblFeedBack;
-        private Label lblTest;
         private Button btnEnd;
+        private Label label1;
     }
 }

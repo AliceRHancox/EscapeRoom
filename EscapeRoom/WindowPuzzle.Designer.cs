@@ -43,10 +43,9 @@
             btnBack.BackColor = Color.Black;
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(1480, 992);
-            btnBack.Margin = new Padding(6);
+            btnBack.Location = new Point(797, 465);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(139, 49);
+            btnBack.Size = new Size(75, 23);
             btnBack.TabIndex = 1;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -57,9 +56,10 @@
             lblRiddle.BackColor = Color.Transparent;
             lblRiddle.Font = new Font("Tempus Sans ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblRiddle.ForeColor = Color.White;
-            lblRiddle.Location = new Point(112, 18);
+            lblRiddle.Location = new Point(60, 8);
+            lblRiddle.Margin = new Padding(2, 0, 2, 0);
             lblRiddle.Name = "lblRiddle";
-            lblRiddle.Size = new Size(837, 78);
+            lblRiddle.Size = new Size(451, 37);
             lblRiddle.TabIndex = 2;
             lblRiddle.Text = "First came the stars, Then came the moon, Then all the little fish in the sea.\r\nThe sheep smiled and grazed in the dark, as the trees grew old and worn.\r\n\r\n";
             // 
@@ -68,9 +68,10 @@
             lblEntercode.AutoSize = true;
             lblEntercode.BackColor = Color.Transparent;
             lblEntercode.ForeColor = Color.White;
-            lblEntercode.Location = new Point(121, 1009);
+            lblEntercode.Location = new Point(65, 473);
+            lblEntercode.Margin = new Padding(2, 0, 2, 0);
             lblEntercode.Name = "lblEntercode";
-            lblEntercode.Size = new Size(137, 32);
+            lblEntercode.Size = new Size(68, 15);
             lblEntercode.TabIndex = 3;
             lblEntercode.Text = "Enter Code:";
             // 
@@ -78,9 +79,10 @@
             // 
             txtBoxCode.BackColor = Color.Black;
             txtBoxCode.ForeColor = Color.White;
-            txtBoxCode.Location = new Point(264, 1009);
+            txtBoxCode.Location = new Point(142, 473);
+            txtBoxCode.Margin = new Padding(2, 1, 2, 1);
             txtBoxCode.Name = "txtBoxCode";
-            txtBoxCode.Size = new Size(414, 39);
+            txtBoxCode.Size = new Size(225, 23);
             txtBoxCode.TabIndex = 4;
             // 
             // btnEnter
@@ -88,9 +90,10 @@
             btnEnter.BackColor = Color.Black;
             btnEnter.FlatStyle = FlatStyle.Popup;
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(712, 1009);
+            btnEnter.Location = new Point(383, 473);
+            btnEnter.Margin = new Padding(2, 1, 2, 1);
             btnEnter.Name = "btnEnter";
-            btnEnter.Size = new Size(150, 46);
+            btnEnter.Size = new Size(81, 22);
             btnEnter.TabIndex = 5;
             btnEnter.Text = "Enter";
             btnEnter.UseVisualStyleBackColor = false;
@@ -101,9 +104,10 @@
             lblFeedBack.AutoSize = true;
             lblFeedBack.BackColor = Color.Black;
             lblFeedBack.ForeColor = Color.White;
-            lblFeedBack.Location = new Point(913, 1009);
+            lblFeedBack.Location = new Point(492, 473);
+            lblFeedBack.Margin = new Padding(2, 0, 2, 0);
             lblFeedBack.Name = "lblFeedBack";
-            lblFeedBack.Size = new Size(0, 32);
+            lblFeedBack.Size = new Size(0, 15);
             lblFeedBack.TabIndex = 6;
             // 
             // btnEnd
@@ -111,9 +115,10 @@
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(1437, 18);
+            btnEnd.Location = new Point(774, 8);
+            btnEnd.Margin = new Padding(2, 1, 2, 1);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(182, 46);
+            btnEnd.Size = new Size(98, 22);
             btnEnd.TabIndex = 7;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
@@ -121,11 +126,11 @@
             // 
             // frmWindowPuzzle
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1642, 1090);
+            ClientSize = new Size(884, 511);
             Controls.Add(btnEnd);
             Controls.Add(lblFeedBack);
             Controls.Add(btnEnter);
@@ -134,7 +139,6 @@
             Controls.Add(lblRiddle);
             Controls.Add(btnBack);
             DoubleBuffered = true;
-            Margin = new Padding(6);
             Name = "frmWindowPuzzle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "WindowPuzzle";

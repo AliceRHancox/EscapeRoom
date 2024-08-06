@@ -36,9 +36,10 @@
             // 
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(1401, 973);
+            btnBack.Location = new Point(754, 456);
+            btnBack.Margin = new Padding(2, 1, 2, 1);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(188, 59);
+            btnBack.Size = new Size(101, 28);
             btnBack.TabIndex = 0;
             btnBack.Text = "Main Menu";
             btnBack.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(1439, 29);
+            btnEnd.Location = new Point(775, 14);
+            btnEnd.Margin = new Padding(2, 1, 2, 1);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(182, 46);
+            btnEnd.Size = new Size(98, 22);
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
@@ -59,12 +61,13 @@
             // 
             // frmLeaderBoard
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1642, 1090);
+            ClientSize = new Size(884, 511);
             Controls.Add(btnEnd);
             Controls.Add(btnBack);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "frmLeaderBoard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmLeaderBoard";

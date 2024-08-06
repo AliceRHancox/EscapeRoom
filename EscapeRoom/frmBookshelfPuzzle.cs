@@ -52,9 +52,9 @@ namespace EscapeRoom
 
             for (int i = 0; i < allPuzzles.Count; i++)
             {
-                if(BOOK_CODE == allPuzzles[i].PuzzleCode)
+                if (BOOK_CODE == allPuzzles[i].PuzzleCode)
                 {
-                    
+
                     try
                     {
                         string EnteredCode = txtBoxCode.Text.ToLower();
@@ -63,7 +63,7 @@ namespace EscapeRoom
                             lblFeedBack.ForeColor = Color.Green;
                             lblFeedBack.Text = "Code accepted. Unlocking puzzle.";
                             allPuzzles[i].Complete = true;
-                            txtBoxCode.Visible=false;
+                            txtBoxCode.Visible = false;
                             btnEnter.Visible = false;
                             lblEntercode.Visible = false;
                             CompletedPuzzles = CompletedPuzzles + 1;
@@ -80,12 +80,12 @@ namespace EscapeRoom
                         lblFeedBack.ForeColor = Color.Red;
                         lblFeedBack.Text = "Invalid input";
                     }
-                    
-                    
+
+
                 }
-                
+
             }
-            
+
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
@@ -95,9 +95,14 @@ namespace EscapeRoom
 
         private void lblTest_Paint(object sender, PaintEventArgs e)
         {
+            Font myfont = new Font("Arial", 14);
+            Brush mybrush = new SolidBrush(System.Drawing.Color.Black);
             e.Graphics.TranslateTransform(30, 20);
             e.Graphics.RotateTransform(90);
-            
+            e.Graphics.DrawString("This is a verticle label", myfont, mybrush, 0, 0);
+
         }
+
+
     }
 }

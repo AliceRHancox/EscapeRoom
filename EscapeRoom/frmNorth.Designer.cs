@@ -43,10 +43,9 @@
             btnWest.BackColor = Color.Transparent;
             btnWest.FlatStyle = FlatStyle.Popup;
             btnWest.ForeColor = Color.White;
-            btnWest.Location = new Point(28, 1024);
-            btnWest.Margin = new Padding(6);
+            btnWest.Location = new Point(15, 480);
             btnWest.Name = "btnWest";
-            btnWest.Size = new Size(156, 70);
+            btnWest.Size = new Size(84, 33);
             btnWest.TabIndex = 0;
             btnWest.Text = "West";
             btnWest.UseVisualStyleBackColor = false;
@@ -57,10 +56,9 @@
             btnEast.BackColor = Color.Transparent;
             btnEast.FlatStyle = FlatStyle.Popup;
             btnEast.ForeColor = Color.White;
-            btnEast.Location = new Point(1467, 1024);
-            btnEast.Margin = new Padding(6);
+            btnEast.Location = new Point(790, 480);
             btnEast.Name = "btnEast";
-            btnEast.Size = new Size(156, 70);
+            btnEast.Size = new Size(84, 33);
             btnEast.TabIndex = 1;
             btnEast.Text = "East";
             btnEast.UseVisualStyleBackColor = false;
@@ -68,8 +66,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(644, 303);
-            pictureBox1.Margin = new Padding(6);
+            pictureBox1.Location = new Point(347, 142);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(0, 0);
             pictureBox1.TabIndex = 2;
@@ -78,10 +75,9 @@
             // picDoor
             // 
             picDoor.Image = Properties.Resources.DoorLayout_1;
-            picDoor.Location = new Point(644, 315);
-            picDoor.Margin = new Padding(6);
+            picDoor.Location = new Point(344, 148);
             picDoor.Name = "picDoor";
-            picDoor.Size = new Size(353, 640);
+            picDoor.Size = new Size(190, 300);
             picDoor.SizeMode = PictureBoxSizeMode.StretchImage;
             picDoor.TabIndex = 5;
             picDoor.TabStop = false;
@@ -91,20 +87,22 @@
             // 
             lblProgress.AutoSize = true;
             lblProgress.ForeColor = Color.White;
-            lblProgress.Location = new Point(715, 220);
+            lblProgress.Location = new Point(385, 103);
+            lblProgress.Margin = new Padding(2, 0, 2, 0);
             lblProgress.Name = "lblProgress";
-            lblProgress.Size = new Size(0, 32);
+            lblProgress.Size = new Size(0, 15);
             lblProgress.TabIndex = 6;
             lblProgress.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnEnd
             // 
-            btnEnd.BackColor = Color.Black;
+            btnEnd.BackColor = Color.Transparent;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(1328, 12);
+            btnEnd.Location = new Point(715, 6);
+            btnEnd.Margin = new Padding(2, 1, 2, 1);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(182, 46);
+            btnEnd.Size = new Size(98, 22);
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
@@ -112,12 +110,12 @@
             // 
             // frmNorth
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1642, 1090);
+            ClientSize = new Size(884, 511);
             Controls.Add(btnEnd);
             Controls.Add(lblProgress);
             Controls.Add(picDoor);
@@ -125,7 +123,6 @@
             Controls.Add(btnEast);
             Controls.Add(btnWest);
             DoubleBuffered = true;
-            Margin = new Padding(6);
             Name = "frmNorth";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmNorth";
