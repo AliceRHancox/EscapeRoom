@@ -65,9 +65,9 @@
             // picPainting
             // 
             picPainting.Image = (Image)resources.GetObject("picPainting.Image");
-            picPainting.Location = new Point(329, 59);
+            picPainting.Location = new Point(330, 98);
             picPainting.Name = "picPainting";
-            picPainting.Size = new Size(215, 159);
+            picPainting.Size = new Size(206, 180);
             picPainting.SizeMode = PictureBoxSizeMode.StretchImage;
             picPainting.TabIndex = 3;
             picPainting.TabStop = false;

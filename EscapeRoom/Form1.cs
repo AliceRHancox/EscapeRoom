@@ -12,7 +12,7 @@ namespace EscapeRoom
         //if the start button is clicked this code will play
         private void btnStart_Click(object sender, EventArgs e)
         {
-            tmrScore.Enabled = true;
+            
             //Creates an array of type sting holding the puzzle codes
             string[] Puzzlecodes = {"umbrella", "301489", "10"};
             //creates a bool called complete and sets it to false

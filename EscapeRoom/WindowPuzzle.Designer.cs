@@ -54,7 +54,7 @@
             // lblRiddle
             // 
             lblRiddle.BackColor = Color.Transparent;
-            lblRiddle.Font = new Font("Tempus Sans ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRiddle.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblRiddle.ForeColor = Color.White;
             lblRiddle.Location = new Point(60, 8);
             lblRiddle.Margin = new Padding(2, 0, 2, 0);

@@ -40,7 +40,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Palatino Linotype", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(251, 46);
+            label1.Location = new Point(244, 45);
             label1.Name = "label1";
             label1.Size = new Size(426, 87);
             label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             btnStart.FlatStyle = FlatStyle.Popup;
             btnStart.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStart.ForeColor = Color.White;
-            btnStart.Location = new Point(362, 209);
+            btnStart.Location = new Point(350, 209);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(190, 64);
             btnStart.TabIndex = 1;
@@ -64,7 +64,7 @@
             btnLeaderBoard.FlatStyle = FlatStyle.Popup;
             btnLeaderBoard.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLeaderBoard.ForeColor = Color.White;
-            btnLeaderBoard.Location = new Point(362, 279);
+            btnLeaderBoard.Location = new Point(350, 279);
             btnLeaderBoard.Name = "btnLeaderBoard";
             btnLeaderBoard.Size = new Size(190, 64);
             btnLeaderBoard.TabIndex = 2;
