@@ -30,13 +30,7 @@ namespace EscapeRoom
             System.Windows.Forms.Application.ExitThread();
         }
         //if leaderboard button is clicked this will play
-        private void btnLeaderBoard_Click(object sender, EventArgs e)
-        {
-            //Same as north but not sending any variable and openening leader board form
-            frmLeaderBoard frmLeaderBoard = new frmLeaderBoard();
-            frmLeaderBoard.ShowDialog();
-            System.Windows.Forms.Application.ExitThread();
-        }
+       
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {

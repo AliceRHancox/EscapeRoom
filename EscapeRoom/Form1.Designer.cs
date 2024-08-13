@@ -30,7 +30,6 @@
         {
             label1 = new Label();
             btnStart = new Button();
-            btnLeaderBoard = new Button();
             btnEnd = new Button();
             SuspendLayout();
             // 
@@ -40,9 +39,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Palatino Linotype", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(244, 45);
+            label1.Location = new Point(453, 96);
+            label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(426, 87);
+            label1.Size = new Size(849, 172);
             label1.TabIndex = 0;
             label1.Text = "Escape Room";
             // 
@@ -51,36 +51,24 @@
             btnStart.FlatStyle = FlatStyle.Popup;
             btnStart.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStart.ForeColor = Color.White;
-            btnStart.Location = new Point(350, 209);
+            btnStart.Location = new Point(666, 630);
+            btnStart.Margin = new Padding(6);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(190, 64);
+            btnStart.Size = new Size(353, 137);
             btnStart.TabIndex = 1;
             btnStart.Text = "Start Game";
             btnStart.UseVisualStyleBackColor = true;
             btnStart.Click += btnStart_Click;
-            // 
-            // btnLeaderBoard
-            // 
-            btnLeaderBoard.FlatStyle = FlatStyle.Popup;
-            btnLeaderBoard.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLeaderBoard.ForeColor = Color.White;
-            btnLeaderBoard.Location = new Point(350, 279);
-            btnLeaderBoard.Name = "btnLeaderBoard";
-            btnLeaderBoard.Size = new Size(190, 64);
-            btnLeaderBoard.TabIndex = 2;
-            btnLeaderBoard.Text = "Leader Board";
-            btnLeaderBoard.UseVisualStyleBackColor = true;
-            btnLeaderBoard.Click += btnLeaderBoard_Click;
             // 
             // btnEnd
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(775, 11);
-            btnEnd.Margin = new Padding(2, 1, 2, 1);
+            btnEnd.Location = new Point(1439, 23);
+            btnEnd.Margin = new Padding(4, 2, 4, 2);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(98, 22);
+            btnEnd.Size = new Size(182, 47);
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
@@ -88,14 +76,14 @@
             // 
             // frmMainMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(884, 511);
+            ClientSize = new Size(1642, 1090);
             Controls.Add(btnEnd);
-            Controls.Add(btnLeaderBoard);
             Controls.Add(btnStart);
             Controls.Add(label1);
+            Margin = new Padding(6);
             Name = "frmMainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -108,7 +96,6 @@
 
         private Label label1;
         private Button btnStart;
-        private Button btnLeaderBoard;
         private Button btnEnd;
     }
 }
