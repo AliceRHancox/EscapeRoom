@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWest));
             btnNorth = new Button();
             btnSouth = new Button();
             picPainting = new PictureBox();
             btnEnd = new Button();
+            tmrTime = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)picPainting).BeginInit();
             SuspendLayout();
             // 
@@ -41,9 +43,10 @@
             btnNorth.BackColor = Color.Transparent;
             btnNorth.FlatStyle = FlatStyle.Popup;
             btnNorth.ForeColor = Color.White;
-            btnNorth.Location = new Point(790, 480);
+            btnNorth.Location = new Point(1467, 1024);
+            btnNorth.Margin = new Padding(6, 6, 6, 6);
             btnNorth.Name = "btnNorth";
-            btnNorth.Size = new Size(84, 33);
+            btnNorth.Size = new Size(156, 70);
             btnNorth.TabIndex = 1;
             btnNorth.Text = "North";
             btnNorth.UseVisualStyleBackColor = false;
@@ -54,9 +57,10 @@
             btnSouth.BackColor = Color.Transparent;
             btnSouth.FlatStyle = FlatStyle.Popup;
             btnSouth.ForeColor = Color.White;
-            btnSouth.Location = new Point(15, 480);
+            btnSouth.Location = new Point(28, 1024);
+            btnSouth.Margin = new Padding(6, 6, 6, 6);
             btnSouth.Name = "btnSouth";
-            btnSouth.Size = new Size(84, 33);
+            btnSouth.Size = new Size(156, 70);
             btnSouth.TabIndex = 2;
             btnSouth.Text = "South";
             btnSouth.UseVisualStyleBackColor = false;
@@ -65,9 +69,10 @@
             // picPainting
             // 
             picPainting.Image = (Image)resources.GetObject("picPainting.Image");
-            picPainting.Location = new Point(330, 98);
+            picPainting.Location = new Point(613, 209);
+            picPainting.Margin = new Padding(6, 6, 6, 6);
             picPainting.Name = "picPainting";
-            picPainting.Size = new Size(206, 180);
+            picPainting.Size = new Size(383, 384);
             picPainting.SizeMode = PictureBoxSizeMode.StretchImage;
             picPainting.TabIndex = 3;
             picPainting.TabStop = false;
@@ -78,27 +83,32 @@
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(715, 6);
-            btnEnd.Margin = new Padding(2, 1, 2, 1);
+            btnEnd.Location = new Point(1328, 13);
+            btnEnd.Margin = new Padding(4, 2, 4, 2);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(98, 22);
+            btnEnd.Size = new Size(182, 47);
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
             btnEnd.Click += btnEnd_Click;
             // 
+            // tmrTime
+            // 
+            tmrTime.Interval = 1000;
+            // 
             // frmWest
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.RoomLayout1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(884, 511);
+            ClientSize = new Size(1642, 1090);
             Controls.Add(btnEnd);
             Controls.Add(picPainting);
             Controls.Add(btnSouth);
             Controls.Add(btnNorth);
             DoubleBuffered = true;
+            Margin = new Padding(6, 6, 6, 6);
             Name = "frmWest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmWest";
@@ -113,5 +123,6 @@
         private Button btnSouth;
         private PictureBox picPainting;
         private Button btnEnd;
+        private System.Windows.Forms.Timer tmrTime;
     }
 }
