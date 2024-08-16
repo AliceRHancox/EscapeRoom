@@ -16,13 +16,15 @@ namespace EscapeRoom
         int CompletedPuzzles;
         const int MAX_PUZZLES = 3;
         List<Puzzles> allPuzzles;
+        int time;
 
         // collects variables sent here from previous form and puts them into some of the variable declaired above
-        public frmNorth(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
+        public frmNorth(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
             allPuzzles = argspuzzle;
+            time = argstime;
         }
         //When the form loards the label lblProgress will stated the number of puzzles completed out of the max number of puzzles 
         private void frmNorth_Load(object sender, EventArgs e)
@@ -43,14 +45,14 @@ namespace EscapeRoom
         //If the button east is clicked it will open the form east, sending across 2 variables. It also makes it so if the user re opens the form weill close
         private void btnEast_Click(object sender, EventArgs e)
         {
-            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles);
+            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles, time);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
         //same as east but a different button and a different form
         private void btnWest_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles);
+            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles, time);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

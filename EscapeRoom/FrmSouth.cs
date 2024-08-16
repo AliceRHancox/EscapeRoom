@@ -14,11 +14,13 @@ namespace EscapeRoom
     {
         int CompletedPuzzles;
         List<Puzzles> allPuzzles;
-        public frmSouth(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
+        int time;
+        public frmSouth(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
             allPuzzles = argspuzzle;
+            time = argstime;
         }
 
         private void picBookShelf_Click(object sender, EventArgs e)
@@ -30,14 +32,14 @@ namespace EscapeRoom
 
         private void btnEast_Click(object sender, EventArgs e)
         {
-            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles);
+            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles, time);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
 
         private void btnWest_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles);
+            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles, time);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

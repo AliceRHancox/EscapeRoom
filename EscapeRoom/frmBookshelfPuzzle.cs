@@ -17,6 +17,7 @@ namespace EscapeRoom
         List<Puzzles> allPuzzles;
         const string BOOK_CODE = "umbrella";
         List<Books> allBooks = new List<Books>();
+        int time;
         public frmBookshelfPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
         {
             InitializeComponent();

@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             btnStart = new Button();
             btnEnd = new Button();
+            tmrTime = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // label1
@@ -39,10 +41,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Palatino Linotype", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(453, 96);
-            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Location = new Point(244, 45);
             label1.Name = "label1";
-            label1.Size = new Size(849, 172);
+            label1.Size = new Size(426, 87);
             label1.TabIndex = 0;
             label1.Text = "Escape Room";
             // 
@@ -51,10 +52,9 @@
             btnStart.FlatStyle = FlatStyle.Popup;
             btnStart.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStart.ForeColor = Color.White;
-            btnStart.Location = new Point(666, 630);
-            btnStart.Margin = new Padding(6);
+            btnStart.Location = new Point(359, 295);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(353, 137);
+            btnStart.Size = new Size(190, 64);
             btnStart.TabIndex = 1;
             btnStart.Text = "Start Game";
             btnStart.UseVisualStyleBackColor = true;
@@ -65,25 +65,29 @@
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
             btnEnd.ForeColor = Color.White;
-            btnEnd.Location = new Point(1439, 23);
-            btnEnd.Margin = new Padding(4, 2, 4, 2);
+            btnEnd.Location = new Point(775, 11);
+            btnEnd.Margin = new Padding(2, 1, 2, 1);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(182, 47);
+            btnEnd.Size = new Size(98, 22);
             btnEnd.TabIndex = 8;
             btnEnd.Text = "Exit Program";
             btnEnd.UseVisualStyleBackColor = false;
             btnEnd.Click += btnEnd_Click_1;
             // 
+            // tmrTime
+            // 
+            tmrTime.Interval = 1000;
+            tmrTime.Tick += tmrTime_Tick;
+            // 
             // frmMainMenu
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1642, 1090);
+            ClientSize = new Size(884, 497);
             Controls.Add(btnEnd);
             Controls.Add(btnStart);
             Controls.Add(label1);
-            Margin = new Padding(6);
             Name = "frmMainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -97,5 +101,6 @@
         private Label label1;
         private Button btnStart;
         private Button btnEnd;
+        private System.Windows.Forms.Timer tmrTime;
     }
 }

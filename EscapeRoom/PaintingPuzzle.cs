@@ -15,16 +15,18 @@ namespace EscapeRoom
         int CompletedPuzzles;
         List<Puzzles> allPuzzles;
         const int PAINT_CODE = 10;
-        public frmPaintingPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
+        int time;
+        public frmPaintingPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
             allPuzzles = argspuzzle;
+            time = argstime;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles);
+            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles, time);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

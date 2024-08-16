@@ -12,7 +12,7 @@ namespace EscapeRoom
 {
     public partial class frmEndScreen : Form
     {
-        
+        int time;
         public frmEndScreen()
         {
             InitializeComponent();

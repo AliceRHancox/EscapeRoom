@@ -15,11 +15,13 @@ namespace EscapeRoom
         int CompletedPuzzles;
         List<Puzzles> allPuzzles;
         const int WINDOW_CODE = 301489;
-        public frmWindowPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle)
+        int time;
+        public frmWindowPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
             allPuzzles = argspuzzle;
+            time = argstime;
         }
 
         private void frmWindowPuzzle_Load(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace EscapeRoom
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles);
+            frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles, time);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
