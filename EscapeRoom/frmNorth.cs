@@ -30,7 +30,16 @@ namespace EscapeRoom
         private void frmNorth_Load(object sender, EventArgs e)
         {
             lblProgress.Text = "Puzzles completed" + Environment.NewLine + CompletedPuzzles + "/" + MAX_PUZZLES;
-            tmrTime.Enabled = true;
+
+
+            if (time == 10)
+            {
+                MessageBox.Show(Convert.ToString(time));
+            }
+            else if (time == 20)
+            {
+                MessageBox.Show(Convert.ToString(time));
+            }
         }
         //when the picture box door is click
         private void picDoor_Click(object sender, EventArgs e)

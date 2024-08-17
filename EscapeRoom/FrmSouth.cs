@@ -46,8 +46,16 @@ namespace EscapeRoom
 
         private void frmSouth_Load(object sender, EventArgs e)
         {
-            tmrTime.Enabled = true;
 
+
+            if (time == 10)
+            {
+                MessageBox.Show(Convert.ToString(time));
+            }
+            else if (time == 20)
+            {
+                MessageBox.Show(Convert.ToString(time));
+            }
         }
 
         private void btnEnd_Click(object sender, EventArgs e)

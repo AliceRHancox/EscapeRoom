@@ -33,7 +33,6 @@ namespace EscapeRoom
 
         private void frmPaintingPuzzle_Load(object sender, EventArgs e)
         {
-            tmrTime.Enabled = true;
             for (int i = 0; i < allPuzzles.Count; i++)
             {
                 if (Convert.ToString(PAINT_CODE) == allPuzzles[i].PuzzleCode)
@@ -48,6 +47,15 @@ namespace EscapeRoom
 
                     }
                 }
+            }
+
+            if (time == 10)
+            {
+                MessageBox.Show(Convert.ToString(time));
+            }
+            else if (time == 20)
+            {
+                MessageBox.Show(Convert.ToString(time));
             }
         }
 

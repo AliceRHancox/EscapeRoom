@@ -94,7 +94,8 @@
             // 
             // tmrTime
             // 
-            tmrTime.Interval = 1000;
+            tmrTime.Enabled = true;
+            tmrTime.Interval = 550;
             tmrTime.Tick += tmrTime_Tick;
             // 
             // frmWest

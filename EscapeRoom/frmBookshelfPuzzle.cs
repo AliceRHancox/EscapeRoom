@@ -34,7 +34,6 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
-            tmrTime.Enabled = true;
             string[] BookName = { "|W  thering heights|", "|  oby Dick|", "|Tess of the d’Ur  ervilles|", "|Oedipus   ex|",
             "|Jane Eyr  |", "|  oita|", "|  es Misérables|", "|The Ili  d|"};
             bool done = false;
@@ -56,6 +55,18 @@ namespace EscapeRoom
                         lblEntercode.Visible = false;
                     }
                 }
+            }
+
+
+
+
+            if (time == 10)
+            {
+                MessageBox.Show(Convert.ToString(time));
+            }
+            else if (time == 20)
+            {
+                MessageBox.Show(Convert.ToString(time));
             }
         }
 
