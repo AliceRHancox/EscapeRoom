@@ -31,15 +31,6 @@ namespace EscapeRoom
         {
             lblProgress.Text = "Puzzles completed" + Environment.NewLine + CompletedPuzzles + "/" + MAX_PUZZLES;
 
-
-            if (time == 10)
-            {
-                MessageBox.Show(Convert.ToString(time));
-            }
-            else if (time == 20)
-            {
-                MessageBox.Show(Convert.ToString(time));
-            }
         }
         //when the picture box door is click
         private void picDoor_Click(object sender, EventArgs e)
@@ -72,7 +63,7 @@ namespace EscapeRoom
         {
             System.Windows.Forms.Application.ExitThread();
         }
-
+        //when the timer ticks add one to time
         private void tmrTime_Tick(object sender, EventArgs e)
         {
             time++;

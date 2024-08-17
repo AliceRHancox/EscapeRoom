@@ -15,6 +15,7 @@ namespace EscapeRoom
         //Creates 2 variables
         int CompletedPuzzles;
         List<Puzzles> allPuzzles;
+        //creates time varaible
         int time;
         //collects variables sent from previous form and puts them into the variables created above
         public frmEast(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
@@ -48,21 +49,14 @@ namespace EscapeRoom
 
         private void frmEast_Load(object sender, EventArgs e)
         {
-            if (time == 10)
-            {
-                MessageBox.Show(Convert.ToString(time));
-            }
-            else if (time == 20)
-            {
-                MessageBox.Show(Convert.ToString(time));
-            }
+            
         }
         //if button clicked it will close the form
         private void btnEnd_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
         }
-
+        //adds one to timer each time the timer ticks
         private void tmrTime_Tick(object sender, EventArgs e)
         {
             time++;

@@ -5,6 +5,7 @@ namespace EscapeRoom
         //creates an int and a list of object puzzles that are public to the form. This means it can be accessed in any method without having to be sent across
         int CompletedPuzzles;
         List<Puzzles> allPuzzles = new List<Puzzles>();
+        //creates the int time. This is where the variable for the timer is going to be kept
         int time = 0;
         public frmMainMenu()
         {
@@ -44,9 +45,6 @@ namespace EscapeRoom
             System.Windows.Forms.Application.ExitThread();
         }
 
-        private void tmrTime_Tick(object sender, EventArgs e)
-        {
 
-        }
     }
 }

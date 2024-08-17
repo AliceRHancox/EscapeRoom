@@ -8,26 +8,22 @@ namespace EscapeRoom
 {
     internal class Books
     {
+        //creates 3 variables
         string bookName;
-        int whichBook;
         bool done;
-        public Books(string argsbookName, int argswhichBook, bool argsdone) 
+        //sets variables to what was sent when the object was created
+        public Books(string argsbookName,  bool argsdone) 
         { 
             bookName = argsbookName;
-            whichBook = argswhichBook;
+
             done = argsdone;
         }
-
+        //makes the variable public but cannot be changed in other forms
         public string BookName
         {
             get { return bookName; }
         }
-
-        public int WhichBook
-        {
-            get { return whichBook; }
-        }
-
+        //does the same as above but can be changed outside of class
         public bool Done
         {
             get { return done; }
