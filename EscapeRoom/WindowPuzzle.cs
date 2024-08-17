@@ -26,6 +26,7 @@ namespace EscapeRoom
 
         private void frmWindowPuzzle_Load(object sender, EventArgs e)
         {
+            tmrTime.Enabled = true;
             for (int i = 0; i < allPuzzles.Count; i++)
             {
                 if (Convert.ToString(WINDOW_CODE) == allPuzzles[i].PuzzleCode)
@@ -86,6 +87,11 @@ namespace EscapeRoom
         private void btnEnd_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void tmrTime_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
     }
 }

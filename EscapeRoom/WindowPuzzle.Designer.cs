@@ -46,7 +46,7 @@
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(1480, 992);
-            btnBack.Margin = new Padding(6, 6, 6, 6);
+            btnBack.Margin = new Padding(6);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(139, 49);
             btnBack.TabIndex = 1;
@@ -130,6 +130,7 @@
             // tmrTime
             // 
             tmrTime.Interval = 1000;
+            tmrTime.Tick += tmrTime_Tick;
             // 
             // frmWindowPuzzle
             // 
@@ -146,7 +147,7 @@
             Controls.Add(lblRiddle);
             Controls.Add(btnBack);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmWindowPuzzle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "WindowPuzzle";

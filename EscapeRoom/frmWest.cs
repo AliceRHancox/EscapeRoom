@@ -51,12 +51,18 @@ namespace EscapeRoom
 
         private void frmWest_Load(object sender, EventArgs e)
         {
+            tmrTime.Enabled = true;
 
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void tmrTime_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
     }
 }

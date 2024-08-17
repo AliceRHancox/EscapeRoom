@@ -48,12 +48,18 @@ namespace EscapeRoom
 
         private void frmEast_Load(object sender, EventArgs e)
         {
+            tmrTime.Enabled = true;
 
         }
         //if button clicked it will close the form
         private void btnEnd_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void tmrTime_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
     }
 }

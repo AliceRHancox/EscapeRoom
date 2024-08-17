@@ -117,6 +117,7 @@
             // tmrTime
             // 
             tmrTime.Interval = 1000;
+            tmrTime.Tick += tmrTime_Tick;
             // 
             // frmNorth
             // 

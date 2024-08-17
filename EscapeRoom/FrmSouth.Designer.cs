@@ -43,7 +43,7 @@
             btnEast.FlatStyle = FlatStyle.Popup;
             btnEast.ForeColor = Color.White;
             btnEast.Location = new Point(28, 1024);
-            btnEast.Margin = new Padding(6, 6, 6, 6);
+            btnEast.Margin = new Padding(6);
             btnEast.Name = "btnEast";
             btnEast.Size = new Size(156, 70);
             btnEast.TabIndex = 1;
@@ -57,7 +57,7 @@
             btnWest.FlatStyle = FlatStyle.Popup;
             btnWest.ForeColor = Color.White;
             btnWest.Location = new Point(1467, 1024);
-            btnWest.Margin = new Padding(6, 6, 6, 6);
+            btnWest.Margin = new Padding(6);
             btnWest.Name = "btnWest";
             btnWest.Size = new Size(156, 70);
             btnWest.TabIndex = 2;
@@ -70,7 +70,7 @@
             picBookShelf.BackColor = Color.Transparent;
             picBookShelf.Image = Properties.Resources.Bookshelf_layout_1;
             picBookShelf.Location = new Point(282, 420);
-            picBookShelf.Margin = new Padding(6, 6, 6, 6);
+            picBookShelf.Margin = new Padding(6);
             picBookShelf.Name = "picBookShelf";
             picBookShelf.Size = new Size(1081, 529);
             picBookShelf.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -95,6 +95,7 @@
             // tmrTime
             // 
             tmrTime.Interval = 1000;
+            tmrTime.Tick += tmrTime_Tick;
             // 
             // frmSouth
             // 
@@ -108,7 +109,7 @@
             Controls.Add(btnWest);
             Controls.Add(btnEast);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmSouth";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmSouth";

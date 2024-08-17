@@ -27,19 +27,20 @@ namespace EscapeRoom
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles);
+            frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles, time);
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
+            tmrTime.Enabled = true;
             string[] BookName = { "|W  thering heights|", "|  oby Dick|", "|Tess of the d’Ur  ervilles|", "|Oedipus   ex|",
             "|Jane Eyr  |", "|  oita|", "|  es Misérables|", "|The Ili  d|"};
             bool done = false;
-            for(int i = 0; i < BookName.Length; i++)
+            for (int i = 0; i < BookName.Length; i++)
             {
-                
+
                 allBooks.Add(new Books(BookName[i], i, done));
             }
             for (int i = 0; i < allPuzzles.Count; i++)
@@ -118,11 +119,16 @@ namespace EscapeRoom
                     allBooks[i].Done = true;
                     i = allBooks.Count;
                 }
-                
-                
+
+
             }
-            
-            
+
+
+        }
+
+        private void tmrTime_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
     }
 }

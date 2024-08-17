@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             lblEndInfo = new Label();
             lblInfo = new Label();
             lblShowTime = new Label();
             btnMainMenu = new Button();
-            tmrTime = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // lblEndInfo
@@ -89,10 +87,6 @@
             btnMainMenu.Visible = false;
             btnMainMenu.Click += btnMainMenu_Click;
             // 
-            // tmrTime
-            // 
-            tmrTime.Interval = 1000;
-            // 
             // frmEndScreen
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -117,6 +111,5 @@
         private Label lblInfo;
         private Label lblShowTime;
         private Button btnMainMenu;
-        private System.Windows.Forms.Timer tmrTime;
     }
 }

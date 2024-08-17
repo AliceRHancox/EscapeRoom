@@ -29,7 +29,6 @@ namespace EscapeRoom
             frmNorth frmNorth = new frmNorth(CompletedPuzzles, allPuzzles, time);
             frmNorth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
-            tmrTime.Enabled = true;
         }
         //if leaderboard button is clicked this will play
 

@@ -30,14 +30,15 @@ namespace EscapeRoom
         private void frmNorth_Load(object sender, EventArgs e)
         {
             lblProgress.Text = "Puzzles completed" + Environment.NewLine + CompletedPuzzles + "/" + MAX_PUZZLES;
+            tmrTime.Enabled = true;
         }
         //when the picture box door is click
         private void picDoor_Click(object sender, EventArgs e)
         {
             //If the number of completed puzzles equals the number of max puzzles the end screen will play
-            if(CompletedPuzzles == MAX_PUZZLES)
+            if (CompletedPuzzles == MAX_PUZZLES)
             {
-                frmEndScreen frmEndScreen = new frmEndScreen();
+                frmEndScreen frmEndScreen = new frmEndScreen(time);
                 frmEndScreen.ShowDialog();
                 System.Windows.Forms.Application.ExitThread();
             }
@@ -61,6 +62,11 @@ namespace EscapeRoom
         private void btnEnd_Click_1(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void tmrTime_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
     }
 }

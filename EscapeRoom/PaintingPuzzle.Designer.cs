@@ -52,7 +52,7 @@
             btnBack.FlatStyle = FlatStyle.Popup;
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(1480, 975);
-            btnBack.Margin = new Padding(6, 6, 6, 6);
+            btnBack.Margin = new Padding(6);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(139, 49);
             btnBack.TabIndex = 1;
@@ -218,6 +218,7 @@
             // tmrTime
             // 
             tmrTime.Interval = 1000;
+            tmrTime.Tick += tmrTime_Tick;
             // 
             // frmPaintingPuzzle
             // 
@@ -242,7 +243,7 @@
             Controls.Add(lblNumber1);
             Controls.Add(btnBack);
             DoubleBuffered = true;
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmPaintingPuzzle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PaintingPuzzle";

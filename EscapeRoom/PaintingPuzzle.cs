@@ -33,6 +33,7 @@ namespace EscapeRoom
 
         private void frmPaintingPuzzle_Load(object sender, EventArgs e)
         {
+            tmrTime.Enabled = true;
             for (int i = 0; i < allPuzzles.Count; i++)
             {
                 if (Convert.ToString(PAINT_CODE) == allPuzzles[i].PuzzleCode)
@@ -44,7 +45,7 @@ namespace EscapeRoom
                         txtBoxCode.Visible = false;
                         btnEntercode.Visible = false;
                         lblMissingNumber.Visible = false;
-                        
+
                     }
                 }
             }
@@ -87,6 +88,11 @@ namespace EscapeRoom
         private void btnEnd_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void tmrTime_Tick(object sender, EventArgs e)
+        {
+            time++;
         }
     }
 }

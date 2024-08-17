@@ -13,9 +13,10 @@ namespace EscapeRoom
     public partial class frmEndScreen : Form
     {
         int time;
-        public frmEndScreen()
+        public frmEndScreen(int argstime)
         {
             InitializeComponent();
+            time = argstime;
         }
 
 
@@ -28,7 +29,7 @@ namespace EscapeRoom
 
         private void frmEndScreen_Load(object sender, EventArgs e)
         {
-
+            lblShowTime.Text = time.ToString();
         }
     }
 }
