@@ -130,7 +130,6 @@
             // tmrTime
             // 
             tmrTime.Enabled = true;
-            tmrTime.Interval = 1000;
             tmrTime.Tick += tmrTime_Tick;
             // 
             // frmWindowPuzzle
