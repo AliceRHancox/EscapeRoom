@@ -49,7 +49,7 @@ namespace EscapeRoom
 
         private void frmEast_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Convert.ToString(time));
+            
         }
         //if button clicked it will close the form
         private void btnEnd_Click(object sender, EventArgs e)

@@ -50,7 +50,7 @@ namespace EscapeRoom
 
         private void frmSouth_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Convert.ToString(time));
+           
         }
 
         //when end is clicked close the form and therefore the game
