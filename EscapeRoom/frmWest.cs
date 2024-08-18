@@ -49,7 +49,7 @@ namespace EscapeRoom
 
         private void frmWest_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show(Convert.ToString(time));
         }
 
         //when end is clicked it will close the form and therefore end the game

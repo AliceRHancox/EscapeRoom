@@ -39,6 +39,7 @@ namespace EscapeRoom
         //when the form loads..
         private void frmPaintingPuzzle_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(Convert.ToString(time));
             //for the length of the all puzzles list of objects (class)
             for (int i = 0; i < allPuzzles.Count; i++)
             {

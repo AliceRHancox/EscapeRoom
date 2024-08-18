@@ -29,6 +29,7 @@ namespace EscapeRoom
         //When the form loards the label lblProgress will stated the number of puzzles completed out of the max number of puzzles 
         private void frmNorth_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(Convert.ToString(time));
             lblProgress.Text = "Puzzles completed" + Environment.NewLine + CompletedPuzzles + "/" + MAX_PUZZLES;
 
         }

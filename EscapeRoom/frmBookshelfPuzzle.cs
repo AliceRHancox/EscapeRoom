@@ -43,6 +43,7 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(Convert.ToString(time));
             //an array of the different book names
             string[] BookName = { "|W  thering heights|", "|  oby Dick|", "|Tess of the d’Ur  ervilles|", "|Oedipus   ex|",
             "|Jane Eyr  |", "|  oita|", "|  es Misérables|", "|The Ili  d|"};
