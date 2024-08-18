@@ -218,7 +218,6 @@
             // tmrTime
             // 
             tmrTime.Enabled = true;
-            tmrTime.Interval = 10;
             tmrTime.Tick += tmrTime_Tick;
             // 
             // frmPaintingPuzzle
