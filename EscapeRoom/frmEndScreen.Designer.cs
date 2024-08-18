@@ -84,7 +84,6 @@
             btnMainMenu.TabIndex = 6;
             btnMainMenu.Text = "Main Menu";
             btnMainMenu.UseVisualStyleBackColor = false;
-            btnMainMenu.Visible = false;
             btnMainMenu.Click += btnMainMenu_Click;
             // 
             // frmEndScreen

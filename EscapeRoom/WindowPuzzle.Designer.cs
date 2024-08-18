@@ -74,15 +74,15 @@
             lblEntercode.Location = new Point(121, 1009);
             lblEntercode.Margin = new Padding(4, 0, 4, 0);
             lblEntercode.Name = "lblEntercode";
-            lblEntercode.Size = new Size(137, 32);
+            lblEntercode.Size = new Size(232, 32);
             lblEntercode.TabIndex = 3;
-            lblEntercode.Text = "Enter Code:";
+            lblEntercode.Text = "Enter Number Code:";
             // 
             // txtBoxCode
             // 
             txtBoxCode.BackColor = Color.Black;
             txtBoxCode.ForeColor = Color.White;
-            txtBoxCode.Location = new Point(264, 1009);
+            txtBoxCode.Location = new Point(376, 1009);
             txtBoxCode.Margin = new Padding(4, 2, 4, 2);
             txtBoxCode.Name = "txtBoxCode";
             txtBoxCode.Size = new Size(414, 39);
@@ -93,7 +93,7 @@
             btnEnter.BackColor = Color.Black;
             btnEnter.FlatStyle = FlatStyle.Popup;
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(711, 1009);
+            btnEnter.Location = new Point(827, 1009);
             btnEnter.Margin = new Padding(4, 2, 4, 2);
             btnEnter.Name = "btnEnter";
             btnEnter.Size = new Size(150, 47);
@@ -107,7 +107,7 @@
             lblFeedBack.AutoSize = true;
             lblFeedBack.BackColor = Color.Black;
             lblFeedBack.ForeColor = Color.White;
-            lblFeedBack.Location = new Point(914, 1009);
+            lblFeedBack.Location = new Point(1003, 1009);
             lblFeedBack.Margin = new Padding(4, 0, 4, 0);
             lblFeedBack.Name = "lblFeedBack";
             lblFeedBack.Size = new Size(0, 32);

@@ -163,9 +163,9 @@
             lblMissingNumber.Location = new Point(32, 119);
             lblMissingNumber.Margin = new Padding(4, 0, 4, 0);
             lblMissingNumber.Name = "lblMissingNumber";
-            lblMissingNumber.Size = new Size(196, 32);
+            lblMissingNumber.Size = new Size(279, 32);
             lblMissingNumber.TabIndex = 10;
-            lblMissingNumber.Text = "Missing Number:";
+            lblMissingNumber.Text = "Missing Shapes Number:";
             // 
             // txtBoxCode
             // 

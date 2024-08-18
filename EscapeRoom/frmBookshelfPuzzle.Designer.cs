@@ -44,6 +44,7 @@
             lblBook7 = new Label();
             lblBook8 = new Label();
             tmrTime = new System.Windows.Forms.Timer(components);
+            lblInfo = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -207,6 +208,18 @@
             tmrTime.Enabled = true;
             tmrTime.Tick += tmrTime_Tick;
             // 
+            // lblInfo
+            // 
+            lblInfo.AutoSize = true;
+            lblInfo.BackColor = Color.Transparent;
+            lblInfo.ForeColor = Color.White;
+            lblInfo.Location = new Point(42, 153);
+            lblInfo.Margin = new Padding(4, 0, 4, 0);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new Size(446, 32);
+            lblInfo.TabIndex = 17;
+            lblInfo.Text = "Find Missing Code From Missing Letters:";
+            // 
             // frmBookshelfPuzzle
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -214,6 +227,7 @@
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1642, 1090);
+            Controls.Add(lblInfo);
             Controls.Add(lblBook8);
             Controls.Add(lblBook7);
             Controls.Add(lblBook6);
@@ -255,5 +269,6 @@
         private Label lblBook7;
         private Label lblBook8;
         private System.Windows.Forms.Timer tmrTime;
+        private Label lblInfo;
     }
 }
