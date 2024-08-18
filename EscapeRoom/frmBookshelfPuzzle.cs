@@ -45,8 +45,8 @@ namespace EscapeRoom
         {
             
             //an array of the different book names
-            string[] BookName = { "|W  thering heights|", "|  oby Dick|", "|Tess of the d’Ur  ervilles|", "|Oedipus   ex|",
-            "|Jane Eyr  |", "|  oita|", "|  es Misérables|", "|The Ili  d|"};
+            string[] BookName = {"|The Ili  d|", "|  es Misérables|",  "|  olita|",  "|Jane Eyr  |",
+                "|Animal Fa m|", "|The Ho bit|", "|  oby Dick|", "|W  thering heights|" };
             //creates bool done and sets it to false
             bool done = false;
 
