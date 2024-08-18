@@ -25,12 +25,13 @@ namespace EscapeRoom
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
             allPuzzles = argspuzzle;
-            time = argstime;
+            time = argstime;   
         }
 
         //when back button is clicked it will open west form
         private void btnBack_Click(object sender, EventArgs e)
         {
+
             frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles, time);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -87,19 +88,24 @@ namespace EscapeRoom
                             btnEntercode.Visible = false;
                             lblMissingNumber.Visible = false;
                             CompletedPuzzles = CompletedPuzzles + 1;
+
                         }
-                        //if not the same entered code as constant tells user
+                        //if not the same entered code as constant tells user also clears text box so if happens
+                        //multiple time the user knows its not bugged
                         else
                         {
                             lblFeedBack.ForeColor = Color.Red;
                             lblFeedBack.Text = "Incorrect code";
+                            txtBoxCode.Clear();
                         }
                     }
-                    //stops the code from breaking and informs user of the mistake
+                    //stops the code from breaking and informs user of the mistake also clears text box so if happens
+                    //multiple time the user knows its not bugged
                     catch
                     {
                         lblFeedBack.ForeColor = Color.Red;
                         lblFeedBack.Text = "Invalid input";
+                        txtBoxCode.Clear();
                     }
                 }
             }

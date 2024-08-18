@@ -18,7 +18,7 @@ namespace EscapeRoom
         const int WINDOW_CODE = 301489;
         int time;
         //sets public variables to variables sent by previouse form
-        public frmWindowPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
+        public frmWindowPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle,int argstime)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
@@ -51,6 +51,7 @@ namespace EscapeRoom
         //if the back button is hit it will re open the form they came from (east)
         private void btnBack_Click(object sender, EventArgs e)
         {
+
             frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles, time);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -83,18 +84,22 @@ namespace EscapeRoom
                             lblEntercode.Visible = false;
                             CompletedPuzzles = CompletedPuzzles + 1;
                         }
-                        //if not the same entered code as constant tells user
+                        //if not the same entered code as constant tells user also clears text box so if happens
+                        //multiple time the user knows its not bugged
                         else
                         {
                             lblFeedBack.ForeColor = Color.Red;
                             lblFeedBack.Text = "Incorrect code";
+                            txtBoxCode.Clear();
                         }
                     }
-                    //stops the code from breaking and informs user of the mistake
+                    //stops the code from breaking and informs user of the mistake also clears text box so if happens
+                    //multiple time the user knows its not bugged
                     catch
                     {
                         lblFeedBack.ForeColor = Color.Red;
                         lblFeedBack.Text = "Invalid input";
+                        txtBoxCode.Clear();
                     }
                 }
             }

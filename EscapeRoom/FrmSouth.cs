@@ -17,6 +17,7 @@ namespace EscapeRoom
         List<Puzzles> allPuzzles;
         int time;
         //gets varibles from previous from and sets then puts them in public variables
+
         public frmSouth(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace EscapeRoom
         //when the button is clicked take to the next form (east)
         private void btnEast_Click(object sender, EventArgs e)
         {
+
             frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles, time);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -43,7 +45,8 @@ namespace EscapeRoom
         //when button is clicked take to the next form (west)
         private void btnWest_Click(object sender, EventArgs e)
         {
-            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles, time);
+
+            frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles,  time);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
         }

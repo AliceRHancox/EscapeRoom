@@ -6,6 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,7 @@ namespace EscapeRoom
         //does the same as above except one is a const and cannot be changed and one is a new list for only this form
         const string BOOK_CODE = "umbrella";
         List<Books> allBooks = new List<Books>();
+        
 
         //creates int vaible for time
         int time;
@@ -36,6 +38,8 @@ namespace EscapeRoom
         //if the back button is hit it will re open the form they came from (south)
         private void btnBack_Click(object sender, EventArgs e)
         {
+           
+
             frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles, time);
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -105,19 +109,22 @@ namespace EscapeRoom
                             lblEntercode.Visible = false;
                             CompletedPuzzles = CompletedPuzzles + 1;
                         }
-                        //if not the same entered code as constant tells user
+                        //if not the same entered code as constant tells user also clears text box so if happens
+                        //multiple time the user knows its not bugged
                         else
                         {
                             lblFeedBack.ForeColor = Color.Red;
                             lblFeedBack.Text = "Incorrect code";
-
+                            txtBoxCode.Clear();
                         }
                     }
-                    //stops the code from breaking and informs user of the mistake
+                    //stops the code from breaking and informs user of the mistake also clears text box so if happens
+                    //multiple time the user knows its not bugged
                     catch
                     {
                         lblFeedBack.ForeColor = Color.Red;
                         lblFeedBack.Text = "Invalid input";
+                        txtBoxCode.Clear();
                     }
 
 

@@ -7,6 +7,7 @@ namespace EscapeRoom
         List<Puzzles> allPuzzles = new List<Puzzles>();
         //creates the int time. This is where the variable for the timer is going to be kept
         int time = 0;
+        
         public frmMainMenu()
         {
             InitializeComponent();

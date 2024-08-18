@@ -18,6 +18,7 @@ namespace EscapeRoom
         List<Puzzles> allPuzzles;
         int time;
 
+
         // collects variables sent here from previous form and puts them into some of the variable declaired above
         public frmNorth(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
@@ -39,6 +40,7 @@ namespace EscapeRoom
             //If the number of completed puzzles equals the number of max puzzles the end screen will play
             if (CompletedPuzzles == MAX_PUZZLES)
             {
+
                 frmEndScreen frmEndScreen = new frmEndScreen(time);
                 frmEndScreen.ShowDialog();
                 System.Windows.Forms.Application.ExitThread();
@@ -47,6 +49,7 @@ namespace EscapeRoom
         //If the button east is clicked it will open the form east, sending across 2 variables. It also makes it so if the user re opens the form weill close
         private void btnEast_Click(object sender, EventArgs e)
         {
+
             frmEast frmEast = new frmEast(CompletedPuzzles, allPuzzles, time);
             frmEast.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -54,6 +57,7 @@ namespace EscapeRoom
         //same as east but a different button and a different form
         private void btnWest_Click(object sender, EventArgs e)
         {
+
             frmWest frmWest = new frmWest(CompletedPuzzles, allPuzzles, time);
             frmWest.ShowDialog();
             System.Windows.Forms.Application.ExitThread();

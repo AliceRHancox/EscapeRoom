@@ -28,6 +28,7 @@ namespace EscapeRoom
         //when north button is click it is taken to north form
         private void btnNorth_Click(object sender, EventArgs e)
         {
+
             frmNorth frmNorth = new frmNorth(CompletedPuzzles, allPuzzles, time);
             frmNorth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -35,6 +36,7 @@ namespace EscapeRoom
         //when south button is clicked it takes your to south form
         private void btnSouth_Click(object sender, EventArgs e)
         {
+
             frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles, time);
             frmSouth.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
@@ -42,6 +44,8 @@ namespace EscapeRoom
         //when the painting is clicked it takes you to painting form
         private void picPainting_Click_1(object sender, EventArgs e)
         {
+
+
             frmPaintingPuzzle frmPaintingPuzzle = new frmPaintingPuzzle(CompletedPuzzles, allPuzzles, time);
             frmPaintingPuzzle.ShowDialog();
             System.Windows.Forms.Application.ExitThread();
