@@ -14,6 +14,8 @@ namespace EscapeRoom
     {
         //creates int time and sets it equal to the received int from the previous form
         int time;
+
+        const int dividebyten = 10;
         public frmEndScreen(int argstime)
         {
             InitializeComponent();
@@ -30,7 +32,8 @@ namespace EscapeRoom
         //when the form loads set the text of lblshowtime to the time recived from previous form
         private void frmEndScreen_Load(object sender, EventArgs e)
         {
-            lblShowTime.Text = time.ToString();
+            double totaltime = time/dividebyten;
+            lblShowTime.Text = totaltime.ToString();
         }
     }
 }
