@@ -176,6 +176,7 @@
             txtBoxCode.Name = "txtBoxCode";
             txtBoxCode.Size = new Size(238, 39);
             txtBoxCode.TabIndex = 11;
+            txtBoxCode.Click += txtBoxCode_Click;
             // 
             // btnEntercode
             // 
