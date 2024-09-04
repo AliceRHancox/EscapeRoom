@@ -25,7 +25,7 @@ namespace EscapeRoom
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
             allPuzzles = argspuzzle;
-            time = argstime;   
+            time = argstime;
         }
 
         //when back button is clicked it will open west form
@@ -40,7 +40,7 @@ namespace EscapeRoom
         //when the form loads..
         private void frmPaintingPuzzle_Load(object sender, EventArgs e)
         {
-            
+
             //for the length of the all puzzles list of objects (class)
             for (int i = 0; i < allPuzzles.Count; i++)
             {
@@ -119,6 +119,11 @@ namespace EscapeRoom
         private void tmrTime_Tick(object sender, EventArgs e)
         {
             time++;
+        }
+
+        private void txtBoxCode_TextChanged(object sender, EventArgs e)
+        {
+            lblFeedBack.Text = "";
         }
     }
 }

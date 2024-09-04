@@ -21,7 +21,7 @@ namespace EscapeRoom
         //does the same as above except one is a const and cannot be changed and one is a new list for only this form
         const string BOOK_CODE = "umbrella";
         List<Books> allBooks = new List<Books>();
-        
+
 
         //creates int vaible for time
         int time;
@@ -38,7 +38,7 @@ namespace EscapeRoom
         //if the back button is hit it will re open the form they came from (south)
         private void btnBack_Click(object sender, EventArgs e)
         {
-           
+
 
             frmSouth frmSouth = new frmSouth(CompletedPuzzles, allPuzzles, time);
             frmSouth.ShowDialog();
@@ -47,7 +47,7 @@ namespace EscapeRoom
 
         private void frmBookshelfPuzzle_Load(object sender, EventArgs e)
         {
-            
+
             //an array of the different book names
             string[] BookName = {"|The Ili  d|", "|  es Misérables|",  "|  olita|",  "|Jane Eyr  |",
                 "|Animal Fa m|", "|The Ho bit|", "|  oby Dick|", "|W  thering heights|" };
@@ -173,6 +173,11 @@ namespace EscapeRoom
         private void tmrTime_Tick(object sender, EventArgs e)
         {
             time++;
+        }
+
+        private void txtBoxCode_TextChanged(object sender, EventArgs e)
+        {
+            lblFeedBack.Text = "";
         }
     }
 }

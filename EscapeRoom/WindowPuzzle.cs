@@ -18,7 +18,7 @@ namespace EscapeRoom
         const int WINDOW_CODE = 301489;
         int time;
         //sets public variables to variables sent by previouse form
-        public frmWindowPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle,int argstime)
+        public frmWindowPuzzle(int argsCompletedPuzzles, List<Puzzles> argspuzzle, int argstime)
         {
             InitializeComponent();
             CompletedPuzzles = argsCompletedPuzzles;
@@ -28,7 +28,7 @@ namespace EscapeRoom
         //when the form loads..
         private void frmWindowPuzzle_Load(object sender, EventArgs e)
         {
-           
+
             //for the length of the all puzzles list of objects (class)
             for (int i = 0; i < allPuzzles.Count; i++)
             {
@@ -113,6 +113,11 @@ namespace EscapeRoom
         private void tmrTime_Tick(object sender, EventArgs e)
         {
             time++;
+        }
+
+        private void txtBoxCode_TextChanged(object sender, EventArgs e)
+        {
+            lblFeedBack.Text = "";
         }
     }
 }
