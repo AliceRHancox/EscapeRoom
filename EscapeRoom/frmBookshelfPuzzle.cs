@@ -177,6 +177,7 @@ namespace EscapeRoom
 
         private void txtBoxCode_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Clicked");
             lblFeedBack.Text = "";
         }
     }

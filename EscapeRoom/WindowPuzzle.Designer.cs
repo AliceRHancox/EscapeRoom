@@ -87,7 +87,6 @@
             txtBoxCode.Name = "txtBoxCode";
             txtBoxCode.Size = new Size(414, 39);
             txtBoxCode.TabIndex = 4;
-            txtBoxCode.TextChanged += txtBoxCode_TextChanged;
             // 
             // btnEnter
             // 

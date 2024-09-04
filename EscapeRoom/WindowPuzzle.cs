@@ -115,8 +115,9 @@ namespace EscapeRoom
             time++;
         }
 
-        private void txtBoxCode_Clicked(object sender, EventArgs e)
+        private void txtBoxCode_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Clicked");
             lblFeedBack.Text = "";
         }
     }
