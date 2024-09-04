@@ -36,7 +36,7 @@
             // 
             // lblEndInfo
             // 
-            lblEndInfo.Font = new Font("Segoe UI", 22.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEndInfo.Font = new Font("Palatino Linotype", 22.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEndInfo.ForeColor = Color.White;
             lblEndInfo.ImageAlign = ContentAlignment.MiddleRight;
             lblEndInfo.Location = new Point(74, 79);
@@ -49,7 +49,7 @@
             // 
             // lblInfo
             // 
-            lblInfo.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblInfo.Font = new Font("Palatino Linotype", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblInfo.ForeColor = Color.White;
             lblInfo.Location = new Point(635, 222);
             lblInfo.Margin = new Padding(4, 0, 4, 0);
@@ -61,7 +61,7 @@
             // 
             // lblShowTime
             // 
-            lblShowTime.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblShowTime.Font = new Font("Palatino Linotype", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblShowTime.ForeColor = Color.White;
             lblShowTime.Location = new Point(492, 365);
             lblShowTime.Margin = new Padding(4, 0, 4, 0);
@@ -75,7 +75,7 @@
             btnMainMenu.BackColor = Color.Black;
             btnMainMenu.BackgroundImageLayout = ImageLayout.None;
             btnMainMenu.FlatStyle = FlatStyle.Popup;
-            btnMainMenu.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMainMenu.Font = new Font("Palatino Linotype", 19.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMainMenu.ForeColor = Color.White;
             btnMainMenu.Location = new Point(635, 729);
             btnMainMenu.Margin = new Padding(4, 2, 4, 2);

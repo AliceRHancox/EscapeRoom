@@ -50,6 +50,7 @@
             // 
             btnBack.BackColor = Color.Black;
             btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.Font = new Font("Book Antiqua", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(1480, 975);
             btnBack.Margin = new Padding(6);
@@ -63,107 +64,108 @@
             // lblNumber1
             // 
             lblNumber1.AutoSize = true;
-            lblNumber1.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber1.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber1.ForeColor = Color.White;
             lblNumber1.Location = new Point(1300, 149);
             lblNumber1.Margin = new Padding(4, 0, 4, 0);
             lblNumber1.Name = "lblNumber1";
-            lblNumber1.Size = new Size(71, 59);
+            lblNumber1.Size = new Size(66, 51);
             lblNumber1.TabIndex = 2;
             lblNumber1.Text = "21";
             // 
             // lblNumber2
             // 
             lblNumber2.AutoSize = true;
-            lblNumber2.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber2.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber2.ForeColor = Color.White;
             lblNumber2.Location = new Point(1300, 367);
             lblNumber2.Margin = new Padding(4, 0, 4, 0);
             lblNumber2.Name = "lblNumber2";
-            lblNumber2.Size = new Size(71, 59);
+            lblNumber2.Size = new Size(66, 51);
             lblNumber2.TabIndex = 3;
             lblNumber2.Text = "23";
             // 
             // lblNumber3
             // 
             lblNumber3.AutoSize = true;
-            lblNumber3.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber3.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber3.ForeColor = Color.White;
             lblNumber3.Location = new Point(1300, 591);
             lblNumber3.Margin = new Padding(4, 0, 4, 0);
             lblNumber3.Name = "lblNumber3";
-            lblNumber3.Size = new Size(71, 59);
+            lblNumber3.Size = new Size(66, 51);
             lblNumber3.TabIndex = 4;
             lblNumber3.Text = "21";
             // 
             // lblNumber4
             // 
             lblNumber4.AutoSize = true;
-            lblNumber4.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber4.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber4.ForeColor = Color.White;
             lblNumber4.Location = new Point(1300, 815);
             lblNumber4.Margin = new Padding(4, 0, 4, 0);
             lblNumber4.Name = "lblNumber4";
-            lblNumber4.Size = new Size(71, 59);
+            lblNumber4.Size = new Size(66, 51);
             lblNumber4.TabIndex = 5;
             lblNumber4.Text = "33";
             // 
             // lblNumber5
             // 
             lblNumber5.AutoSize = true;
-            lblNumber5.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber5.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber5.ForeColor = Color.White;
             lblNumber5.Location = new Point(1111, 1007);
             lblNumber5.Margin = new Padding(4, 0, 4, 0);
             lblNumber5.Name = "lblNumber5";
-            lblNumber5.Size = new Size(71, 59);
+            lblNumber5.Size = new Size(66, 51);
             lblNumber5.TabIndex = 6;
             lblNumber5.Text = "28";
             // 
             // lblNumber6
             // 
             lblNumber6.AutoSize = true;
-            lblNumber6.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber6.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber6.ForeColor = Color.White;
             lblNumber6.Location = new Point(901, 1007);
             lblNumber6.Margin = new Padding(4, 0, 4, 0);
             lblNumber6.Name = "lblNumber6";
-            lblNumber6.Size = new Size(71, 59);
+            lblNumber6.Size = new Size(66, 51);
             lblNumber6.TabIndex = 7;
             lblNumber6.Text = "23";
             // 
             // lblNumber7
             // 
             lblNumber7.AutoSize = true;
-            lblNumber7.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber7.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber7.ForeColor = Color.White;
             lblNumber7.Location = new Point(680, 1007);
             lblNumber7.Margin = new Padding(4, 0, 4, 0);
             lblNumber7.Name = "lblNumber7";
-            lblNumber7.Size = new Size(71, 59);
+            lblNumber7.Size = new Size(66, 51);
             lblNumber7.TabIndex = 8;
             lblNumber7.Text = "19";
             // 
             // lblNumber8
             // 
             lblNumber8.AutoSize = true;
-            lblNumber8.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber8.Font = new Font("Book Antiqua", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber8.ForeColor = Color.White;
             lblNumber8.Location = new Point(453, 1007);
             lblNumber8.Margin = new Padding(4, 0, 4, 0);
             lblNumber8.Name = "lblNumber8";
-            lblNumber8.Size = new Size(71, 59);
+            lblNumber8.Size = new Size(66, 51);
             lblNumber8.TabIndex = 9;
             lblNumber8.Text = "28";
             // 
             // lblMissingNumber
             // 
             lblMissingNumber.AutoSize = true;
+            lblMissingNumber.Font = new Font("Book Antiqua", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblMissingNumber.ForeColor = Color.White;
             lblMissingNumber.Location = new Point(32, 119);
             lblMissingNumber.Margin = new Padding(4, 0, 4, 0);
             lblMissingNumber.Name = "lblMissingNumber";
-            lblMissingNumber.Size = new Size(279, 32);
+            lblMissingNumber.Size = new Size(278, 28);
             lblMissingNumber.TabIndex = 10;
             lblMissingNumber.Text = "Missing Shapes Number:";
             // 
@@ -183,6 +185,7 @@
             btnEntercode.BackColor = Color.Black;
             btnEntercode.BackgroundImageLayout = ImageLayout.None;
             btnEntercode.FlatStyle = FlatStyle.Popup;
+            btnEntercode.Font = new Font("Book Antiqua", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEntercode.ForeColor = Color.White;
             btnEntercode.Location = new Point(32, 256);
             btnEntercode.Margin = new Padding(4, 2, 4, 2);
@@ -195,6 +198,7 @@
             // 
             // lblFeedBack
             // 
+            lblFeedBack.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblFeedBack.ForeColor = Color.White;
             lblFeedBack.Location = new Point(32, 367);
             lblFeedBack.Margin = new Padding(4, 0, 4, 0);
@@ -206,6 +210,7 @@
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.Font = new Font("Book Antiqua", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEnd.ForeColor = Color.White;
             btnEnd.Location = new Point(1437, 36);
             btnEnd.Margin = new Padding(4, 2, 4, 2);

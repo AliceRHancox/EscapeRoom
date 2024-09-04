@@ -52,7 +52,7 @@
             btnStart.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStart.ForeColor = Color.White;
             btnStart.Location = new Point(675, 534);
-            btnStart.Margin = new Padding(6, 6, 6, 6);
+            btnStart.Margin = new Padding(6);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(353, 137);
             btnStart.TabIndex = 1;
@@ -64,6 +64,7 @@
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEnd.ForeColor = Color.White;
             btnEnd.Location = new Point(1439, 23);
             btnEnd.Margin = new Padding(4, 2, 4, 2);
@@ -83,7 +84,7 @@
             Controls.Add(btnEnd);
             Controls.Add(btnStart);
             Controls.Add(label1);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmMainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

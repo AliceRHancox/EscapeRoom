@@ -41,6 +41,7 @@
             // 
             btnEast.BackColor = Color.Transparent;
             btnEast.FlatStyle = FlatStyle.Popup;
+            btnEast.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEast.ForeColor = Color.White;
             btnEast.Location = new Point(28, 1024);
             btnEast.Margin = new Padding(6);
@@ -55,6 +56,7 @@
             // 
             btnWest.BackColor = Color.Transparent;
             btnWest.FlatStyle = FlatStyle.Popup;
+            btnWest.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnWest.ForeColor = Color.White;
             btnWest.Location = new Point(1467, 1024);
             btnWest.Margin = new Padding(6);
@@ -82,6 +84,7 @@
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEnd.ForeColor = Color.White;
             btnEnd.Location = new Point(1319, 13);
             btnEnd.Margin = new Padding(4, 2, 4, 2);

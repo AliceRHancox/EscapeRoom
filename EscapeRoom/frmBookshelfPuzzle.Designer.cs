@@ -50,6 +50,7 @@
             // 
             btnBack.BackColor = Color.Black;
             btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(1456, 979);
             btnBack.Margin = new Padding(6);
@@ -64,11 +65,12 @@
             // 
             lblEntercode.AutoSize = true;
             lblEntercode.BackColor = Color.Black;
+            lblEntercode.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEntercode.ForeColor = Color.White;
             lblEntercode.Location = new Point(11, 870);
             lblEntercode.Margin = new Padding(4, 0, 4, 0);
             lblEntercode.Name = "lblEntercode";
-            lblEntercode.Size = new Size(222, 32);
+            lblEntercode.Size = new Size(229, 32);
             lblEntercode.TabIndex = 1;
             lblEntercode.Text = "Enter Hidden Code:";
             // 
@@ -88,6 +90,7 @@
             btnEnter.BackColor = Color.Black;
             btnEnter.BackgroundImageLayout = ImageLayout.None;
             btnEnter.FlatStyle = FlatStyle.Popup;
+            btnEnter.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEnter.ForeColor = Color.White;
             btnEnter.Location = new Point(685, 864);
             btnEnter.Margin = new Padding(4, 2, 4, 2);
@@ -102,6 +105,7 @@
             // 
             lblFeedBack.AutoSize = true;
             lblFeedBack.BackColor = Color.Black;
+            lblFeedBack.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblFeedBack.ForeColor = Color.White;
             lblFeedBack.Location = new Point(867, 875);
             lblFeedBack.Margin = new Padding(4, 0, 4, 0);
@@ -113,6 +117,7 @@
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEnd.ForeColor = Color.White;
             btnEnd.Location = new Point(1413, 13);
             btnEnd.Margin = new Padding(4, 2, 4, 2);

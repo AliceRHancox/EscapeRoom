@@ -44,6 +44,7 @@
             // 
             btnBack.BackColor = Color.Black;
             btnBack.FlatStyle = FlatStyle.Popup;
+            btnBack.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(1480, 992);
             btnBack.Margin = new Padding(6);
@@ -57,7 +58,7 @@
             // lblRiddle
             // 
             lblRiddle.BackColor = Color.Transparent;
-            lblRiddle.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRiddle.Font = new Font("Palatino Linotype", 7.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblRiddle.ForeColor = Color.White;
             lblRiddle.Location = new Point(111, 17);
             lblRiddle.Margin = new Padding(4, 0, 4, 0);
@@ -93,6 +94,7 @@
             // 
             btnEnter.BackColor = Color.Black;
             btnEnter.FlatStyle = FlatStyle.Popup;
+            btnEnter.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEnter.ForeColor = Color.White;
             btnEnter.Location = new Point(827, 1009);
             btnEnter.Margin = new Padding(4, 2, 4, 2);
@@ -107,6 +109,7 @@
             // 
             lblFeedBack.AutoSize = true;
             lblFeedBack.BackColor = Color.Black;
+            lblFeedBack.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblFeedBack.ForeColor = Color.White;
             lblFeedBack.Location = new Point(1003, 1009);
             lblFeedBack.Margin = new Padding(4, 0, 4, 0);
@@ -118,6 +121,7 @@
             // 
             btnEnd.BackColor = Color.Black;
             btnEnd.FlatStyle = FlatStyle.Popup;
+            btnEnd.Font = new Font("Palatino Linotype", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEnd.ForeColor = Color.White;
             btnEnd.Location = new Point(1437, 17);
             btnEnd.Margin = new Padding(4, 2, 4, 2);

@@ -144,7 +144,7 @@ namespace EscapeRoom
         private void lbl_Paint(object sender, PaintEventArgs e)
         {
             //sets font and size and colour
-            Font myfont = new Font("Arial", 14);
+            Font myfont = new Font("Palatino Linotype", 14);
             Brush mybrush = new SolidBrush(System.Drawing.Color.Black);
             //sets location and rotation
             e.Graphics.TranslateTransform(30, 220);
@@ -177,7 +177,7 @@ namespace EscapeRoom
 
         private void txtBoxCode_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Clicked");
+            
             lblFeedBack.Text = "";
         }
 
