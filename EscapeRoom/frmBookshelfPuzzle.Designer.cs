@@ -215,6 +215,7 @@
             // 
             // frmBookshelfPuzzle
             // 
+            AcceptButton = btnEnter;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.BooksfromBookshelf_layout_1;

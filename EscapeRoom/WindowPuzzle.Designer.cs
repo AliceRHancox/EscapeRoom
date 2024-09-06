@@ -139,6 +139,7 @@
             // 
             // frmWindowPuzzle
             // 
+            AcceptButton = btnEnter;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");

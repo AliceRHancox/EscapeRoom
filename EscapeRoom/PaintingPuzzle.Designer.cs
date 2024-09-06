@@ -228,6 +228,7 @@
             // 
             // frmPaintingPuzzle
             // 
+            AcceptButton = btnEntercode;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
